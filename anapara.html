@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="tr" class="js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RamadaBet Genel Bonus Kuralları ve Şartları</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#09080A; --bg-2:#0F0D10; --panel:#151216; --panel-2:#1A161B;
+    --line:#2E252B; --line-soft:#241E24;
+    --ink:#F6F3F4; --ink-2:#BDB4B9; --ink-3:#837A80;
+    --accent:#A30827; --accent-2:#C50A30; --accent-deep:#4C0217;
+    --r:12px; --r-s:8px; --r-xs:6px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg); color:var(--ink); font-family:'Manrope',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+    font-size:15.5px; line-height:1.62; -webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px; margin:0 auto; padding-inline:20px}
+  a{color:inherit}
+
+  /* HEADER */
+  .header{border-bottom:1px solid var(--line-soft); background:rgba(9,8,10,.86); backdrop-filter:blur(10px);
+    position:sticky; top:0; z-index:30}
+  .header-in{display:flex; align-items:center; gap:14px; padding-block:14px}
+  .header img{height:60px; width:auto; display:block}
+  .header-cta{margin-left:auto}
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:9px; font-family:'Sora',sans-serif;
+    font-weight:700; font-size:14px; letter-spacing:.015em; padding:13px 24px; border-radius:var(--r-s);
+    border:1px solid transparent; text-decoration:none; cursor:pointer;
+    transition:background .18s ease,border-color .18s ease,transform .12s ease}
+  .btn svg{width:15px;height:15px;flex:none}
+  .btn-primary{background:var(--accent); color:#fff; box-shadow:0 10px 26px -14px rgba(197,10,48,.95)}
+  .btn-primary:hover{background:var(--accent-2)}
+  .btn-primary:active{transform:translateY(1px)}
+  .btn-ghost{background:transparent; color:var(--ink); border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--accent-2)}
+  .btn-lg{font-size:15.5px; padding:16px 34px}
+  .btn-block{width:100%}
+  .header .btn{padding:10px 18px; font-size:13px}
+
+  /* HERO */
+  .hero{position:relative; overflow:hidden; border-bottom:1px solid var(--line-soft)}
+  .hero::before{content:""; position:absolute; inset:0;
+    background:
+      radial-gradient(760px 420px at 72% 0%, rgba(163,8,39,.34), transparent 62%),
+      radial-gradient(620px 380px at 4% 14%, rgba(76,2,23,.42), transparent 62%),
+      repeating-linear-gradient(115deg, rgba(255,255,255,.020) 0 1px, transparent 1px 26px);
+  }
+  .hero-in{position:relative; padding-block:58px 52px; display:grid; grid-template-columns:1.05fr .95fr;
+    gap:40px; align-items:center}
+  .eyebrow{display:inline-flex; align-items:center; gap:9px; font-family:'Sora',sans-serif; font-size:11px;
+    font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:#EFC2CC;
+    border:1px solid rgba(197,10,48,.5); background:rgba(163,8,39,.14); padding:7px 12px; border-radius:var(--r-xs)}
+  .eyebrow i{width:6px;height:6px;background:var(--accent-2);display:block;border-radius:1px}
+  h1{font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(32px,5.2vw,52px); line-height:1.06;
+    letter-spacing:-.025em; margin:20px 0 14px}
+  h1 b{color:var(--accent-2); font-weight:800}
+  .lede{color:var(--ink-2); font-size:16.5px; margin:0 0 26px; max-width:520px}
+  .hero-actions{display:flex; flex-wrap:wrap; gap:12px; align-items:center}
+  .hero-hint{font-size:12.5px; color:var(--ink-3); margin-top:14px}
+
+  /* BONUS GORSELI (animasyonlu cerceve) */
+  .visual{position:relative; margin:0; border-radius:var(--r); overflow:hidden;
+    background:#0E0C0F; isolation:isolate}
+  .visual::before{content:""; position:absolute; left:50%; top:50%; width:170%; aspect-ratio:1;
+    translate:-50% -50%; z-index:0;
+    background:conic-gradient(from 0deg, transparent 0 58%, rgba(163,8,39,.85) 74%, #FF4D6D 84%, rgba(163,8,39,.85) 90%, transparent 100%);
+    animation:donce 5.5s linear infinite}
+  .visual-in{position:relative; z-index:1; margin:1.5px; border-radius:10.5px; overflow:hidden; display:block;
+    background:linear-gradient(160deg,#1C1016 0%, #120F13 55%, #0E0C0F 100%)}
+  .visual-in::after{content:""; position:absolute; inset:0; pointer-events:none;
+    background:repeating-linear-gradient(115deg, rgba(255,255,255,.03) 0 1px, transparent 1px 16px)}
+  .visual img{width:100%; height:auto; object-fit:contain; display:none}
+  .visual.dolu img{display:block}
+  .visual.dolu .visual-empty{display:none}
+  .visual-empty{margin:auto; display:flex; flex-direction:column; align-items:center; gap:8px; text-align:center;
+    padding:24px; border:1px dashed var(--line); border-radius:var(--r-s); width:calc(100% - 48px)}
+  .visual-ico{font-family:'Sora',sans-serif; font-size:26px; color:var(--accent-2); line-height:1;
+    animation:nefes 2.4s ease-in-out infinite}
+  .visual-empty b{font-family:'Sora',sans-serif; font-size:14px; font-weight:700; color:var(--ink-2)}
+  .visual-empty em{font-style:normal; font-size:12px; color:var(--ink-3)}
+  .visual-shine{position:absolute; top:-40%; left:-60%; width:40%; height:180%; z-index:3; pointer-events:none;
+    background:linear-gradient(100deg, transparent, rgba(255,255,255,.14), transparent);
+    transform:rotate(14deg); animation:parla 5.5s ease-in-out infinite}
+
+  @keyframes donce{to{rotate:360deg}}
+  @keyframes nefes{0%,100%{transform:translateY(0); opacity:.85} 50%{transform:translateY(-4px); opacity:1}}
+  @keyframes parla{0%,62%{left:-60%} 88%,100%{left:120%}}
+
+  /* TUTAR SERIDI */
+  .facts{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line-soft);
+    border:1px solid var(--line); border-radius:var(--r); overflow:hidden; margin-top:28px}
+  .facts div{background:#100D11; padding:14px 12px; text-align:center}
+  .facts span{display:block; font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3)}
+  .facts b{font-family:'Sora',sans-serif; font-size:15px; font-weight:700}
+
+  /* SECTION */
+  section.blk{padding-block:52px}
+  .blk + .blk{border-top:1px solid var(--line-soft)}
+  h2{font-family:'Sora',sans-serif; font-weight:700; font-size:23px; letter-spacing:-.01em; margin:0 0 6px}
+  .sub{color:var(--ink-3); font-size:13.5px; margin:0 0 26px}
+
+  /* STEPS */
+  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+  .step{background:var(--panel); border:1px solid var(--line-soft); border-radius:var(--r); padding:22px 20px;
+    position:relative; transition:border-color .2s ease}
+  .step:hover{border-color:rgba(197,10,48,.55)}
+  .step-no{font-family:'Sora',sans-serif; font-weight:800; font-size:13px; color:#fff; background:var(--accent);
+    width:30px; height:30px; display:flex; align-items:center; justify-content:center; border-radius:var(--r-xs);
+    margin-bottom:14px}
+  .step h3{font-family:'Sora',sans-serif; font-size:15.5px; font-weight:700; margin:0 0 6px}
+  .step p{margin:0; color:var(--ink-2); font-size:13.8px}
+
+  /* RULES */
+  .rules-box{background:linear-gradient(180deg,var(--panel) 0%, var(--bg-2) 100%); border:1px solid var(--line);
+    border-radius:var(--r); overflow:hidden}
+  .rules-head{padding:18px 24px; border-bottom:1px solid var(--line-soft); display:flex; align-items:center; gap:12px}
+  .rules-head b{font-family:'Sora',sans-serif; font-size:15px; font-weight:700}
+  .rules-head i{width:4px; height:18px; background:var(--accent); display:block; border-radius:1px}
+  ol.rules{margin:0; padding:10px 24px 26px; list-style:none; counter-reset:r}
+  ol.rules li{counter-increment:r; position:relative; padding:14px 0 0 38px; font-size:14.2px; color:var(--ink-2);
+    border-bottom:1px solid var(--line-soft); padding-bottom:14px}
+  ol.rules li:last-child{border-bottom:0}
+  ol.rules li::before{content:counter(r,decimal-leading-zero); position:absolute; left:0; top:15px;
+    font-family:'Sora',sans-serif; font-size:11.5px; font-weight:700; color:var(--accent-2); letter-spacing:.06em}
+  ol.rules li b{color:var(--ink); font-weight:700}
+  .warn{margin-top:18px; border:1px solid var(--line-soft); border-left:3px solid var(--accent); border-radius:var(--r-s);
+    background:var(--panel); padding:14px 16px; color:var(--ink-2); font-size:13.2px}
+
+  /* FINAL CTA */
+
+  .footer{border-top:1px solid var(--line-soft); padding-block:24px 40px; color:var(--ink-3); font-size:12.5px}
+  .footer-in{display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap}
+
+  @media (max-width:820px){
+    .hero-in{grid-template-columns:1fr; gap:30px; padding-block:40px 42px}
+    .steps{grid-template-columns:1fr}
+  }
+  @media (max-width:520px){
+    .header img{height:46px}
+    .header .btn{padding:9px 14px; font-size:12.5px}
+    .facts{grid-template-columns:1fr 1fr}
+    ol.rules{padding-inline:18px}
+    .rules-head{padding-inline:18px}
+    .btn-lg{width:100%; padding:15px 20px}
+  }
+
+  /* ---------- ANIMASYONLAR ---------- */
+  html.js .reveal{opacity:0; transform:translateY(16px)}
+  html.js .reveal.gorundu{opacity:1; transform:none;
+    transition:opacity .55s ease var(--gec,0s), transform .55s cubic-bezier(.2,.75,.3,1) var(--gec,0s)}
+
+  .eyebrow i{animation:yanip 1.8s ease-in-out infinite}
+  @keyframes yanip{0%,100%{opacity:1; box-shadow:0 0 0 0 rgba(197,10,48,.55)} 50%{opacity:.55; box-shadow:0 0 0 5px rgba(197,10,48,0)}}
+
+  /* header butonu: usulca gecen isik */
+  .header .btn-primary{position:relative; overflow:hidden}
+  .header .btn-primary::after{content:""; position:absolute; top:-50%; left:-70%; width:45%; height:200%;
+    background:linear-gradient(100deg, transparent, rgba(255,255,255,.28), transparent); transform:rotate(16deg);
+    animation:parla 4.5s ease-in-out infinite}
+
+  /* tutar seridi */
+  .facts div{transition:background .25s ease, transform .25s ease}
+  .facts div:hover{background:#17121A; transform:translateY(-2px)}
+  .facts b{display:inline-block; transition:color .25s ease}
+  .facts div:hover b{color:var(--accent-2)}
+
+  /* adim kartlari */
+  .step{transition:border-color .25s ease, transform .25s ease, background .25s ease}
+  .step:hover{transform:translateY(-4px); background:var(--panel-2)}
+  .step-no{transition:transform .25s ease, box-shadow .25s ease}
+  .step:hover .step-no{transform:rotate(-6deg) scale(1.06); box-shadow:0 8px 18px -10px rgba(197,10,48,.9)}
+
+  /* kurallar */
+  .rules-head i{animation:uza 2.6s ease-in-out infinite; transform-origin:center}
+  @keyframes uza{0%,100%{transform:scaleY(1); opacity:1} 50%{transform:scaleY(.55); opacity:.6}}
+  ol.rules li{position:relative; transition:color .25s ease, padding-left .25s ease}
+  ol.rules li::after{content:""; position:absolute; left:0; top:8px; bottom:8px; width:2px; background:var(--accent-2);
+    transform:scaleY(0); transform-origin:top; transition:transform .3s cubic-bezier(.2,.75,.3,1); border-radius:1px}
+  ol.rules li:hover{color:var(--ink); padding-left:44px}
+  ol.rules li:hover::after{transform:scaleY(1)}
+  html.js ol.rules li.satir{opacity:0; transform:translateX(-10px)}
+  html.js ol.rules li.satir.gorundu{opacity:1; transform:none;
+    transition:opacity .45s ease var(--gec,0s), transform .45s cubic-bezier(.2,.75,.3,1) var(--gec,0s)}
+
+  /* hareket azaltma acikken her sey duruyor ama GORUNUR kalir */
+  @media (prefers-reduced-motion: reduce){
+    html.js .reveal, html.js ol.rules li.satir{opacity:1 !important; transform:none !important; transition:none !important}
+    .visual::before, .visual-shine, .eyebrow i, .header .btn-primary::after, .rules-head i, .visual-ico{animation:none !important}
+  }
+
+/* KIRMIZI RENK SABITLEME */
+.btn-primary,
+.header .btn-primary,
+.step-no {
+  background: #C50A30 !important;
+  background-color: #C50A30 !important;
+  color: #FFFFFF !important;
+  border-color: #C50A30 !important;
+}
+
+.btn-primary:hover,
+.header .btn-primary:hover {
+  background: #E30B38 !important;
+  background-color: #E30B38 !important;
+  border-color: #E30B38 !important;
+}
+
+.btn-primary:active,
+.header .btn-primary:active {
+  background: #A30827 !important;
+  background-color: #A30827 !important;
+}
+
+.step:hover .step-no {
+  background: #C50A30 !important;
+  background-color: #C50A30 !important;
+}
+
+.eyebrow {
+  border-color: rgba(197,10,48,.65) !important;
+}
+
+.eyebrow i {
+  background: #C50A30 !important;
+}
+
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap header-in">
+    <a href="#giris"><img src="https://ramada.umydigital.com/static/uploads/logo-00b130d1fd434234.png" alt="Ramada Bet"></a>
+    <div class="header-cta">
+      <a class="btn btn-primary" href="https://bit.ly/rmdsosyal" id="ust-giris">Güncel Adres</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO: TEK BONUS -->
+<section class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <span class="eyebrow reveal"><i></i> Genel Bonus Kuralları</span>
+      <h1 class="reveal">RamadaBet <b>GENEL BONUS KURALLARI</b></h1>
+      <p class="lede reveal">Anapara, bonus ve platform kullanımına ilişkin genel kurallar ve şartlar.</p>
+      <div class="facts reveal">
+        <div><span>Anapara</span><b>Kuralları</b></div>
+        <div><span>Bonus</span><b>Şartları</b></div>
+        <div><span>Bahis</span><b>Çevrimi</b></div>
+        <div><span>Hesap</span><b>Güvenliği</b></div>
+      </div>
+    </div>
+
+    <!-- BONUS GORSELI: link asagidaki BONUS_GORSEL satirina yazilir -->
+    <figure class="visual reveal" id="gorsel-kutu">
+      <div class="visual-in">
+        <img id="bonus-gorsel" alt="RamadaBet Genel Bonus Kuralları">
+        <figcaption class="visual-empty" id="gorsel-bos">
+          <span class="visual-ico">＋</span>
+          <b>Genel Bonus Kuralları</b>
+          <em>Anapara, bonus ve bahis çevrim şartları</em>
+        </figcaption>
+        <span class="visual-shine" aria-hidden="true"></span>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- ADIMLAR -->
+<section class="blk">
+  <div class="wrap">
+    <h2 class="reveal">Genel Kurallar</h2>
+    <p class="sub reveal">Anapara, bonus ve bahis işlemlerinizde geçerli olan temel kurallar.</p>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-no">01</div>
+        <h3>Anapara & Bonus</h3>
+        <p>Promosyon, çevrim, çekim ve kayıp bonusu kuralları ilgili şartlara uygun şekilde uygulanır.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-no">02</div>
+        <h3>Bahis Çevrimi</h3>
+        <p>Spor, casino, canlı casino ve slot bahislerinde belirtilen çevrim ve katkı oranları geçerlidir.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-no">03</div>
+        <h3>Hesap Güvenliği</h3>
+        <p>Hesap doğrulama, haksız kazanç, çoklu hesap ve karşılıklı bahis kuralları uygulanmaktadır.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KURALLAR -->
+<section class="blk">
+  <div class="wrap">
+    <h2 class="reveal">Kurallar ve Koşullar</h2>
+    <p class="sub reveal">Kampanya ve promosyonlardan faydalanmadan önce tüm kuralları dikkatlice okuyunuz.</p>
+    <div class="rules-box reveal">
+      <div class="rules-head"><i></i><b>RamadaBet Genel Bonus Kuralları ve Şartları</b></div>
+      <ol class="rules">
+        <li>Aksi belirtilmediği sürece, Özel Etkinlikler, Promo Kodlar, Çark Kodu, Yatırıma Ek FreeSpin/FreeBet'ler dışında, her yatırıma yalnızca 1 (Bir) adet Promosyon talep edilebilir.</li>
+        <li>Art arda özel oran bahislerinden faydalanabilmeniz için bahis aralığınız içerisinde minimum 1000₺ yatırım işleminizin bulunması gerekmektedir.</li>
+        <li>Para çekim işlemleri yalnızca Anapara ve Bonus çevrim şartları tamamlandığında gerçekleştirilebilir. Eğer bonus bakiyeniz tükenirse, kalan çevrim şartını anaparanız ile tamamlamanız gerekmektedir.</li>
+        <li>Çevrimli bonuslar için, Para Çekim işlemi gerçekleşene kadar sadece bonusun geçerli olduğu alanda bahis yapmanız gerekmektedir. Aksi takdirde bonus ve bonus ile elde edilen kazançlar düzenlenerek bakiye anapara miktarına düşürülür.</li>
+        <li>Son 24 saat içinde para çekim işlemi yapmış üyelerimiz, çevrimli veya çevrimsiz yatırım bonuslarından yararlanamazlar.</li>
+        <li>Çevrimsiz bonuslardan faydalanılması durumunda, kullanılan bonusun içeriğinde belirtilen anapara çevrim kuralı geçerli olur.</li>
+        <li>Bonus ve Anapara ile ayrı maçlara bahis yapmanız gerekmektedir. Birleştirilerek yapılan bahis olması durumunda, almış olduğunuz bonus ve bonus kazancı iptal edilir.</li>
+        <li>Kayıp Bonusu hesaplaması, yatırımların toplamını ve bonus talep edilene kadar yapılan çekimleri içerir. Toplam yatırım ve çekim farkı, üyenin kâr veya zararını belirler.</li>
+        <li>Aksi belirtilmediği sürece, bonusu aldıktan sonra 15 gün içerisinde kullanmanız gerekmektedir. Aksi halde bonus ve bonus kazançlarınız iptal edilir.</li>
+        <li>Eğer yatırım bonusundan faydalandıysanız ve aynı yatırımdan gelen bakiyeyi kaybederseniz, bu durumda kayıp bonusunu talep etmeniz mümkün değildir.</li>
+        <li>Kayıp bonusu ve sadakat bonusu, farklı promosyonlar ile birleştirilemez. Birleştirilmesi halinde bonus kazancı ve iptal yetkisi RamadaBet Risk Birimine aittir.</li>
+        <li>Kayıp bonusları, kar-zarar durumuna göre belirlenmektedir. Bu oran, belirlenen kriterler doğrultusunda hesaplanarak üyeye sunulur.</li>
+        <li>Kayıp bonuslarının 2 ihtimalli oyunlarda kullanılması durumunda kayıp bonus miktarının 15 katı çevrim yapılması gereklidir ve maksimum kayıp bonus miktarının 10 (On) katına kadar çekim yapılabilir.</li>
+        <li>Bonusun çevrim şartı karşılanmadan bonus iptal talebiniz kabul edilmez. Bonusunuzu iptal etmek için bakiyenizin tamamen sıfırlanması gerekmektedir veya belirtilen çevrim kurallarına uygun kazanç elde ederek çevriminizi otomatik olarak tamamlamanız gerekir.</li>
+        <li>Bonus kullanımında karşılıklı bahis alımı tespit edildiğinde, hesabınızın kapatılma hakkı RamadaBet'te saklıdır ve bu durumda herhangi bir hak talebinde bulunmanız mümkün değildir.</li>
+        <li>Anaparanın maksimum 80 katına kadar kazanç sağlayabilirsiniz. Üstü bakiye otomatik olarak sistem tarafından düzenlenmektedir.</li>
+        <li>PromoCode'dan yararlanabilmeniz için son 3 gün içerisinde minimum 2000₺ yatırım yapmış olmanız gerekmektedir.</li>
+        <li>PromoCode ile çekim yapabilmeniz için iki PromoCode arası minimum 500₺ yatırım şartı mevcuttur.</li>
+        <li>Yatırımınıza ek almış olduğunuz FreeSpinler ve Çark Kodu ile elde ettiğiniz FreeSpinlerin herhangi bir şartı olmamakla birlikte anaparanız olarak nitelendirilmektedir.</li>
+        <li>Spor, E-Spor ve Sanal Bahislerinde Anapara Çevrimi</li>
+        <li>Tek maç minimum 1.30 oranında veya daha yüksek oranda; kombine kuponlarda ise her maç oranının minimum 1.30 veya daha yüksek oranda Anapara miktarının 1 katı tutarı kadar bahis alımı sağlamanız gerekmektedir.</li>
+        <li>Spor alanında anapara ile iki ihtimalli bahis alım durumunda anapara tutarının 3 katı kadar çevrim yapılması gerekmektedir.</li>
+        <li>Bozdurulan (Cashout) bahisler çevrime dahil değildir.</li>
+        <li>Casino ve Canlı Casino Bahislerinde Anapara Çevrimi</li>
+        <li>Anapara miktarının 1 katı kadar bahis alımı sağlamanız gerekmektedir.</li>
+        <li>Slot Bahislerinin çevrime katkı oranı %20, Canlı Casino Bahislerinin çevrime katkı oranı %50'dir.</li>
+        <li>Immersive Roulette ve Rulet masalarında, bahis alabileceğiniz maksimum sayı adedi 18 olarak sınırlıdır. 18 sayı üzeri bahislerin kazanç durumunda kazancınız anaparaya indirilecektir.</li>
+        <li>Auto-Roulette, Roulette , XXXtreme Lightning Roulette, Turkish Roulette , PowerUp, Immersive Roulette masalarında, bahis alabileceğiniz maksimum sayı adedi 12 olarak sınırlıdır. Rulet oyunlarında 1/2, 1/3 ve 12 sayı üstü bahis alımı yapılmamaktadır. Çevrim şartlarını ½ ihtimalli oyunlarda, karşılıklı bahis ya da benzer yöntemlerle tamamlamanız durumunda, bu hareketler sistemimizce otomatik olarak belirlenir. 1/3 sayı üzeri bahisiniz bulunmaktadır.</li>
+        <li>Rulet,Blackjack, Aviator, Zeppelin, Sic-Bo vb. oyunlarda 5 (Beş) katı; Baccarat, Dragon Tiger, ½, ⅔, gibi ihtimalli oyunlarda 8 (Sekiz) katı tutarı kadar bahis alımı sağlamanız gerekmektedir.Blackjack alanında yan bahis kazançlarının 1 katı kadar çevrim sağlanması gerekmektedir.</li>
+        <li>Aviatör vb oyunlarda minimum 1.99x oranında bozdurma işlemi yapabilirsiniz. 1.99 altındaki oranlar çevrimden sayılmamaktadır.</li>
+        <li>Roulette oyununda tekrarlanan oyun biçimleri ve/veya aynı sayılara tekrarlanan şekilde bahis alındığı risk birimizce tespit edilen oyuncularda Ramadabet bakiye düzenleme hakkını saklı tutar.</li>
+        <li>Slot oyunlarında kazanılan Jackpot ödülünün 1 katı çevrim yapılması gerekmektedir.</li>
+        <li>Slot oyunlarında düşen Freespin X çarpanlı kazançların, 1 katı çevrim yapılması gerekmektedir.</li>
+        <li>Sağlayıcı turnuvalarında elde ettiğiniz ödüllerin, ödül miktarınızın 3 katı tutarında çevrim yapılması gerekmektedir.</li>
+        <li>Blackjack bahislerinde yan bahis alınması durumunda anaparanın 3 katı çevrim yapılması gerekmektedir.</li>
+        <li>Slot alanında sonuçlandırılmamış ve devam etme potansiyeli olan oyunlarda bırakılan bakiye tespit edilirse bonus ve kazanç iptal edilir.</li>
+        <li>Haksız Kazanç Engelleme Kuralları</li>
+        <li>Bonus ve Ana Para çevrim şartlarını ½ ihtimalli oyunlarda, karşılıklı bahis ya da benzer yöntemlerle tamamlamanız durumunda, bu hareketler sistemimizce otomatik olarak belirlenir. Bu tür bir faaliyet tüm bakiyenizin silinmesine ve sistem tarafından kısıtlanmanıza yol açabilir. Ayrıca bu tür durumlarda herhangi bir hak talebininde geçerliliği olmaz.</li>
+        <li>Tüm oyun sağlayıcıların alt yapısı ile uyumlu bir şekilde oluşturulan Kara Liste (Blacklist) protokolüne uygun olarak hareket edilmektedir. Herhangi bir kuralla uyumsuz ya da hileli aktivite tespit edilen oyuncular, sistemimizin kara listesine otomatik olarak eklenirler.</li>
+        <li>RamadaBet Anapara &amp; Bonus Kuralları çerçevesinde, iki ihtimalli oyunlarda 'Martingale' stratejisi kullanmak yasaklanmıştır. Bu tarz bir strateji tespit edildiği anda, ilgili oyuncunun haksız yolla elde ettiği kazançlar iptal edilecektir.</li>
+        <li>Hesap güvenliği ve doğrulanabilmesi adına İlk çekim işlemleri ile Özel Oran, deneme bonusu ve promosyon kod çekim işlemleri yalnızca Havale yöntemleri ile gerçekleştirilebilir.</li>
+        <li>Kayıt sırasında verilen kimlik bilgilerinin yanlış veya başkasına ait olması durumunda, oyuncu hesabı süresiz olarak kapatılır. Eğer yanlışlıkla hatalı bilgi verildiyse, finansal bir işlem gerçekleştirmeden önce RamadaBet Canlı Destek hattı ile iletişime geçilmelidir.</li>
+        <li>Bonus ve anapara çevrim şartlarına; aynı maça yapılan karşılıkla bahisler (Alt-Üst, Tek-Çift, 2 İhtimalli Ev Sahibi-Deplasman Handikapları) ve Sistem Bahisleri (Çift-Üçlü-Yankee-Trixie-Süper Heinz ve benzeri), Zincir bahisler ve iptal olan karşılaşmalar dahil değildir. Eğer bir ya da daha fazla kullanıcı bonus alıp karşılıklı bahis oynamışsa, bu durumda elde edilen kazançlar hesaptan otomatik olarak düşürülecektir.</li>
+        <li>Kampanya ve Promosyonlardan faydalanmayı seçen üyeler, bu etkinliklerle ilgili tüm kural ve şartları okumuş ve kabul etmiş olarak kabul edilir.</li>
+        <li>RamadanBet; herhangi bir kampanya veya promosyonun kural ve şartlarını, herhangi bir sebep göstermeksizin değiştirme veya güncelleme hakkını saklı tutar.</li>
+        <li>Aşağıdaki durumlar tespit edildiği takdirde ilgili hesaplara bonus ödemesi yapılmayacaktır: Aynı ismi paylaşan hesaplar, Aynı aileye veya eve ait hesaplar, Aynı IP adresini paylaşan hesaplar, Aynı kişisel bilgileri içeren hesaplar, Aynı kişiye ait birden çok hesap, Genel bonus şartlarının ihlali. Bu şekilde kuralların uyulmadığı hesaplar bonus ile ödeme almaya uygun değildir.</li>
+      </ol>
+    </div>
+    <div class="warn reveal">Kampanya ve promosyonların kural ve şartları RamadaBet tarafından herhangi bir sebep gösterilmeksizin değiştirilebilir veya güncellenebilir.</div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <span>© Ramada Bet</span>
+    <span>18+ · Sorumlu oyun</span>
+  </div>
+</footer>
+
+<script>
+  /* ============ BURAYI DOLDUR ============ */
+  var GUNCEL_ADRES = "#";      /* guncel giris adresi linki */
+  var BONUS_GORSEL = "https://i.ibb.co/7xmjTYf6/g-rsel-2026-09-11-154859808.png";       /* bonus gorselinin linki */
+  /* ======================================= */
+
+  document.querySelectorAll('a[href="#giris"]').forEach(function(a){
+    a.setAttribute('href', GUNCEL_ADRES);
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener');
+  });
+  /* kurallar satirlarini tek tek belirginlestir */
+  document.querySelectorAll('ol.rules li').forEach(function(li){ li.classList.add('satir'); });
+
+  var hedefler = document.querySelectorAll('.reveal, ol.rules li.satir');
+  if ('IntersectionObserver' in window) {
+    var gozcu = new IntersectionObserver(function(kayitlar){
+      kayitlar.forEach(function(k, i){
+        if (!k.isIntersecting) return;
+        k.target.style.setProperty('--gec', (Math.min(i,6) * 70) + 'ms');
+        k.target.classList.add('gorundu');
+        gozcu.unobserve(k.target);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    hedefler.forEach(function(el){ gozcu.observe(el); });
+  } else {
+    hedefler.forEach(function(el){ el.classList.add('gorundu'); });
+  }
+  /* emniyet: 2.5 sn sonra ne kaldiysa acilir (gorunmez icerik kalmasin) */
+  setTimeout(function(){ hedefler.forEach(function(el){ el.classList.add('gorundu'); }); }, 2500);
+
+  if (BONUS_GORSEL) {
+    var img = document.getElementById('bonus-gorsel');
+    img.src = BONUS_GORSEL;
+    document.getElementById('gorsel-kutu').classList.add('dolu');
+  }
+</script>
+</body>
+</html>
