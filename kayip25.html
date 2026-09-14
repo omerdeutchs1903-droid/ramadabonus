@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="tr" class="js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RamadaBet %25 Anlık Çevrimsiz Kayıp Bonusu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#09080A; --bg-2:#0F0D10; --panel:#151216; --panel-2:#1A161B;
+    --line:#2E252B; --line-soft:#241E24;
+    --ink:#F6F3F4; --ink-2:#BDB4B9; --ink-3:#837A80;
+    --accent:#A30827; --accent-2:#C50A30; --accent-deep:#4C0217;
+    --r:12px; --r-s:8px; --r-xs:6px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{background:var(--bg); color:var(--ink); font-family:'Manrope',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+    font-size:15.5px; line-height:1.62; -webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px; margin:0 auto; padding-inline:20px}
+  a{color:inherit}
+
+  /* HEADER */
+  .header{border-bottom:1px solid var(--line-soft); background:rgba(9,8,10,.86); backdrop-filter:blur(10px);
+    position:sticky; top:0; z-index:30}
+  .header-in{display:flex; align-items:center; gap:14px; padding-block:14px}
+  .header img{height:60px; width:auto; display:block}
+  .header-cta{margin-left:auto}
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:9px; font-family:'Sora',sans-serif;
+    font-weight:700; font-size:14px; letter-spacing:.015em; padding:13px 24px; border-radius:var(--r-s);
+    border:1px solid transparent; text-decoration:none; cursor:pointer;
+    transition:background .18s ease,border-color .18s ease,transform .12s ease}
+  .btn svg{width:15px;height:15px;flex:none}
+  .btn-primary{background:var(--accent); color:#fff; box-shadow:0 10px 26px -14px rgba(197,10,48,.95)}
+  .btn-primary:hover{background:var(--accent-2)}
+  .btn-primary:active{transform:translateY(1px)}
+  .btn-ghost{background:transparent; color:var(--ink); border-color:var(--line)}
+  .btn-ghost:hover{border-color:var(--accent-2)}
+  .btn-lg{font-size:15.5px; padding:16px 34px}
+  .btn-block{width:100%}
+  .header .btn{padding:10px 18px; font-size:13px}
+
+  /* HERO */
+  .hero{position:relative; overflow:hidden; border-bottom:1px solid var(--line-soft)}
+  .hero::before{content:""; position:absolute; inset:0;
+    background:
+      radial-gradient(760px 420px at 72% 0%, rgba(163,8,39,.34), transparent 62%),
+      radial-gradient(620px 380px at 4% 14%, rgba(76,2,23,.42), transparent 62%),
+      repeating-linear-gradient(115deg, rgba(255,255,255,.020) 0 1px, transparent 1px 26px);
+  }
+  .hero-in{position:relative; padding-block:58px 52px; display:grid; grid-template-columns:1.05fr .95fr;
+    gap:40px; align-items:center}
+  .eyebrow{display:inline-flex; align-items:center; gap:9px; font-family:'Sora',sans-serif; font-size:11px;
+    font-weight:700; letter-spacing:.18em; text-transform:uppercase; color:#EFC2CC;
+    border:1px solid rgba(197,10,48,.5); background:rgba(163,8,39,.14); padding:7px 12px; border-radius:var(--r-xs)}
+  .eyebrow i{width:6px;height:6px;background:var(--accent-2);display:block;border-radius:1px}
+  h1{font-family:'Sora',sans-serif; font-weight:800; font-size:clamp(32px,5.2vw,52px); line-height:1.06;
+    letter-spacing:-.025em; margin:20px 0 14px}
+  h1 b{color:var(--accent-2); font-weight:800}
+  .lede{color:var(--ink-2); font-size:16.5px; margin:0 0 26px; max-width:520px}
+  .hero-actions{display:flex; flex-wrap:wrap; gap:12px; align-items:center}
+  .hero-hint{font-size:12.5px; color:var(--ink-3); margin-top:14px}
+
+  /* BONUS GORSELI (animasyonlu cerceve) */
+  .visual{position:relative; margin:0; border-radius:var(--r); overflow:hidden;
+    background:#0E0C0F; isolation:isolate}
+  .visual::before{content:""; position:absolute; left:50%; top:50%; width:170%; aspect-ratio:1;
+    translate:-50% -50%; z-index:0;
+    background:conic-gradient(from 0deg, transparent 0 58%, rgba(163,8,39,.85) 74%, #FF4D6D 84%, rgba(163,8,39,.85) 90%, transparent 100%);
+    animation:donce 5.5s linear infinite}
+  .visual-in{position:relative; z-index:1; margin:1.5px; border-radius:10.5px; overflow:hidden; display:block;
+    background:linear-gradient(160deg,#1C1016 0%, #120F13 55%, #0E0C0F 100%)}
+  .visual-in::after{content:""; position:absolute; inset:0; pointer-events:none;
+    background:repeating-linear-gradient(115deg, rgba(255,255,255,.03) 0 1px, transparent 1px 16px)}
+  .visual img{width:100%; height:auto; object-fit:contain; display:none}
+  .visual.dolu img{display:block}
+  .visual.dolu .visual-empty{display:none}
+  .visual-empty{margin:auto; display:flex; flex-direction:column; align-items:center; gap:8px; text-align:center;
+    padding:24px; border:1px dashed var(--line); border-radius:var(--r-s); width:calc(100% - 48px)}
+  .visual-ico{font-family:'Sora',sans-serif; font-size:26px; color:var(--accent-2); line-height:1;
+    animation:nefes 2.4s ease-in-out infinite}
+  .visual-empty b{font-family:'Sora',sans-serif; font-size:14px; font-weight:700; color:var(--ink-2)}
+  .visual-empty em{font-style:normal; font-size:12px; color:var(--ink-3)}
+  .visual-shine{position:absolute; top:-40%; left:-60%; width:40%; height:180%; z-index:3; pointer-events:none;
+    background:linear-gradient(100deg, transparent, rgba(255,255,255,.14), transparent);
+    transform:rotate(14deg); animation:parla 5.5s ease-in-out infinite}
+
+  @keyframes donce{to{rotate:360deg}}
+  @keyframes nefes{0%,100%{transform:translateY(0); opacity:.85} 50%{transform:translateY(-4px); opacity:1}}
+  @keyframes parla{0%,62%{left:-60%} 88%,100%{left:120%}}
+
+  /* TUTAR SERIDI */
+  .facts{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line-soft);
+    border:1px solid var(--line); border-radius:var(--r); overflow:hidden; margin-top:28px}
+  .facts div{background:#100D11; padding:14px 12px; text-align:center}
+  .facts span{display:block; font-size:10.5px; letter-spacing:.13em; text-transform:uppercase; color:var(--ink-3)}
+  .facts b{font-family:'Sora',sans-serif; font-size:15px; font-weight:700}
+
+  /* SECTION */
+  section.blk{padding-block:52px}
+  .blk + .blk{border-top:1px solid var(--line-soft)}
+  h2{font-family:'Sora',sans-serif; font-weight:700; font-size:23px; letter-spacing:-.01em; margin:0 0 6px}
+  .sub{color:var(--ink-3); font-size:13.5px; margin:0 0 26px}
+
+  /* STEPS */
+  .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+  .step{background:var(--panel); border:1px solid var(--line-soft); border-radius:var(--r); padding:22px 20px;
+    position:relative; transition:border-color .2s ease}
+  .step:hover{border-color:rgba(197,10,48,.55)}
+  .step-no{font-family:'Sora',sans-serif; font-weight:800; font-size:13px; color:#fff; background:var(--accent);
+    width:30px; height:30px; display:flex; align-items:center; justify-content:center; border-radius:var(--r-xs);
+    margin-bottom:14px}
+  .step h3{font-family:'Sora',sans-serif; font-size:15.5px; font-weight:700; margin:0 0 6px}
+  .step p{margin:0; color:var(--ink-2); font-size:13.8px}
+
+  /* RULES */
+  .rules-box{background:linear-gradient(180deg,var(--panel) 0%, var(--bg-2) 100%); border:1px solid var(--line);
+    border-radius:var(--r); overflow:hidden}
+  .rules-head{padding:18px 24px; border-bottom:1px solid var(--line-soft); display:flex; align-items:center; gap:12px}
+  .rules-head b{font-family:'Sora',sans-serif; font-size:15px; font-weight:700}
+  .rules-head i{width:4px; height:18px; background:var(--accent); display:block; border-radius:1px}
+  ol.rules{margin:0; padding:10px 24px 26px; list-style:none; counter-reset:r}
+  ol.rules li{counter-increment:r; position:relative; padding:14px 0 0 38px; font-size:14.2px; color:var(--ink-2);
+    border-bottom:1px solid var(--line-soft); padding-bottom:14px}
+  ol.rules li:last-child{border-bottom:0}
+  ol.rules li::before{content:counter(r,decimal-leading-zero); position:absolute; left:0; top:15px;
+    font-family:'Sora',sans-serif; font-size:11.5px; font-weight:700; color:var(--accent-2); letter-spacing:.06em}
+  ol.rules li b{color:var(--ink); font-weight:700}
+  .warn{margin-top:18px; border:1px solid var(--line-soft); border-left:3px solid var(--accent); border-radius:var(--r-s);
+    background:var(--panel); padding:14px 16px; color:var(--ink-2); font-size:13.2px}
+
+  /* FINAL CTA */
+
+  .footer{border-top:1px solid var(--line-soft); padding-block:24px 40px; color:var(--ink-3); font-size:12.5px}
+  .footer-in{display:flex; justify-content:space-between; gap:14px; flex-wrap:wrap}
+
+  @media (max-width:820px){
+    .hero-in{grid-template-columns:1fr; gap:30px; padding-block:40px 42px}
+    .steps{grid-template-columns:1fr}
+  }
+  @media (max-width:520px){
+    .header img{height:46px}
+    .header .btn{padding:9px 14px; font-size:12.5px}
+    .facts{grid-template-columns:1fr 1fr}
+    ol.rules{padding-inline:18px}
+    .rules-head{padding-inline:18px}
+    .btn-lg{width:100%; padding:15px 20px}
+  }
+
+  /* ---------- ANIMASYONLAR ---------- */
+  html.js .reveal{opacity:0; transform:translateY(16px)}
+  html.js .reveal.gorundu{opacity:1; transform:none;
+    transition:opacity .55s ease var(--gec,0s), transform .55s cubic-bezier(.2,.75,.3,1) var(--gec,0s)}
+
+  .eyebrow i{animation:yanip 1.8s ease-in-out infinite}
+  @keyframes yanip{0%,100%{opacity:1; box-shadow:0 0 0 0 rgba(197,10,48,.55)} 50%{opacity:.55; box-shadow:0 0 0 5px rgba(197,10,48,0)}}
+
+  /* header butonu: usulca gecen isik */
+  .header .btn-primary{position:relative; overflow:hidden}
+  .header .btn-primary::after{content:""; position:absolute; top:-50%; left:-70%; width:45%; height:200%;
+    background:linear-gradient(100deg, transparent, rgba(255,255,255,.28), transparent); transform:rotate(16deg);
+    animation:parla 4.5s ease-in-out infinite}
+
+  /* tutar seridi */
+  .facts div{transition:background .25s ease, transform .25s ease}
+  .facts div:hover{background:#17121A; transform:translateY(-2px)}
+  .facts b{display:inline-block; transition:color .25s ease}
+  .facts div:hover b{color:var(--accent-2)}
+
+  /* adim kartlari */
+  .step{transition:border-color .25s ease, transform .25s ease, background .25s ease}
+  .step:hover{transform:translateY(-4px); background:var(--panel-2)}
+  .step-no{transition:transform .25s ease, box-shadow .25s ease}
+  .step:hover .step-no{transform:rotate(-6deg) scale(1.06); box-shadow:0 8px 18px -10px rgba(197,10,48,.9)}
+
+  /* kurallar */
+  .rules-head i{animation:uza 2.6s ease-in-out infinite; transform-origin:center}
+  @keyframes uza{0%,100%{transform:scaleY(1); opacity:1} 50%{transform:scaleY(.55); opacity:.6}}
+  ol.rules li{position:relative; transition:color .25s ease, padding-left .25s ease}
+  ol.rules li::after{content:""; position:absolute; left:0; top:8px; bottom:8px; width:2px; background:var(--accent-2);
+    transform:scaleY(0); transform-origin:top; transition:transform .3s cubic-bezier(.2,.75,.3,1); border-radius:1px}
+  ol.rules li:hover{color:var(--ink); padding-left:44px}
+  ol.rules li:hover::after{transform:scaleY(1)}
+  html.js ol.rules li.satir{opacity:0; transform:translateX(-10px)}
+  html.js ol.rules li.satir.gorundu{opacity:1; transform:none;
+    transition:opacity .45s ease var(--gec,0s), transform .45s cubic-bezier(.2,.75,.3,1) var(--gec,0s)}
+
+  /* hareket azaltma acikken her sey duruyor ama GORUNUR kalir */
+  @media (prefers-reduced-motion: reduce){
+    html.js .reveal, html.js ol.rules li.satir{opacity:1 !important; transform:none !important; transition:none !important}
+    .visual::before, .visual-shine, .eyebrow i, .header .btn-primary::after, .rules-head i, .visual-ico{animation:none !important}
+  }
+
+/* KIRMIZI RENK SABITLEME */
+.btn-primary,
+.header .btn-primary,
+.step-no {
+  background: #C50A30 !important;
+  background-color: #C50A30 !important;
+  color: #FFFFFF !important;
+  border-color: #C50A30 !important;
+}
+
+.btn-primary:hover,
+.header .btn-primary:hover {
+  background: #E30B38 !important;
+  background-color: #E30B38 !important;
+  border-color: #E30B38 !important;
+}
+
+.btn-primary:active,
+.header .btn-primary:active {
+  background: #A30827 !important;
+  background-color: #A30827 !important;
+}
+
+.step:hover .step-no {
+  background: #C50A30 !important;
+  background-color: #C50A30 !important;
+}
+
+.eyebrow {
+  border-color: rgba(197,10,48,.65) !important;
+}
+
+.eyebrow i {
+  background: #C50A30 !important;
+}
+
+</style>
+</head>
+<body>
+
+<header class="header">
+  <div class="wrap header-in">
+    <a href="https://bit.ly/rmdsosyal"><img src="https://ramada.umydigital.com/static/uploads/logo-00b130d1fd434234.png" alt="Ramada Bet"></a>
+    <div class="header-cta">
+      <a class="btn btn-primary" href="https://bit.ly/rmdsosyal" id="ust-giris">Güncel Adres</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO: TEK BONUS -->
+<section class="hero">
+  <div class="wrap hero-in">
+    <div>
+      <span class="eyebrow reveal"><i></i> Anlık Çevrimsiz Kayıp</span>
+      <h1 class="reveal">%25 <b>ANLIK ÇEVRİMSİZ KAYIP</b></h1>
+      <p class="lede reveal">%25 Anlık Çevrimsiz Kayıp Bonusu — Kayıplarınıza özel, çevrimsiz bonus fırsatı.</p>
+      <div class="facts reveal">
+        <div><span>Minimum Kayıp</span><b>500₺</b></div>
+        <div><span>Bonus</span><b>%25</b></div>
+        <div><span>Geçmiş</span><b>24 Saat</b></div>
+        <div><span>Casino Çevrim</span><b>1x</b></div>
+      </div>
+    </div>
+
+    <!-- BONUS GORSELI: link asagidaki BONUS_GORSEL satirina yazilir -->
+    <figure class="visual reveal" id="gorsel-kutu">
+      <div class="visual-in">
+        <img id="bonus-gorsel" alt="RamadaBet %25 Anlık Çevrimsiz Kayıp Bonusu">
+        <figcaption class="visual-empty" id="gorsel-bos">
+          <span class="visual-ico">＋</span>
+          <b>%25 Anlık Çevrimsiz Kayıp Bonusu</b>
+          <em>Anapara, bonus ve bahis çevrim şartları</em>
+        </figcaption>
+        <span class="visual-shine" aria-hidden="true"></span>
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- ADIMLAR -->
+<section class="blk">
+  <div class="wrap">
+    <h2 class="reveal">Genel Kurallar</h2>
+    <p class="sub reveal">24 saat içerisindeki kayıplara uygulanan %25 Anlık Çevrimsiz Kayıp Bonusu şartları.</p>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-no">01</div>
+        <h3>500₺ Kayıp</h3>
+        <p>Kayıp bonusundan yararlanabilmek için minimum 500₺ kayıp yaşamanız gerekmektedir.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-no">02</div>
+        <h3>%25 Anlık Bonus</h3>
+        <p>24 saat içerisindeki kayıplarınız üzerinden %25 Anlık Çevrimsiz Kayıp Bonusu tanımlanır.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-no">03</div>
+        <h3>Çevrimsiz Kullanım</h3>
+        <p>Casino alanında bonusun 1 katı katılım yeterlidir; spor alanında belirtilen oran şartları uygulanır.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KURALLAR -->
+<section class="blk">
+  <div class="wrap">
+    <h2 class="reveal">Kurallar ve Koşullar</h2>
+    <p class="sub reveal">%25 Anlık Çevrimsiz Kayıp Bonusundan faydalanmadan önce tüm kuralları dikkatlice okuyunuz.</p>
+    <div class="rules-box reveal">
+      <div class="rules-head"><i></i><b>RamadaBet %25 Anlık Çevrimsiz Kayıp Bonusu ve Şartları</b></div>
+      <ol class="rules">
+         <li>Kayıp bonusundan yararlanabilmeniz için minimum <b>500₺ kaybınızın</b> olması gerekmektedir.</li>
+         <li>Discount <b>24 saat içerisindeki kayıplara</b> verilecek olup geçmişe dönük bonus ekleme işlemi yapılamaz.</li>
+         <li>Bu promosyondan yararlanmanız için <b>yatırım bonusu almamanız</b> gerekmektedir. Yatırım bonusu kullanan üyeler bu promosyondan faydalanamaz.</li>
+         <li>Casino alanında bonusun <b>1 katı</b> kadar katılım sağlamanız yeterli olacaktır.</li>
+         <li>Spor alanında tekli bahislerde minimum <b>1.60 oran</b>, kombine bahislerde ise her bir karşılaşmada minimum <b>1.40 oran</b> sağlanması durumunda çevrim tamamlanacaktır.</li>
+         <li><b>500₺ – 49.999₺</b> arası yatırım için maksimum <b>20 kat</b> çekim limiti uygulanır.</li>
+         <li><b>50.000₺ – 99.999₺</b> arası yatırım için maksimum <b>30 kat</b> çekim limiti uygulanır.</li>
+         <li><b>100.000₺ ve üzeri</b> yatırım için maksimum <b>40 kat</b> çekim limiti uygulanır.</li>
+         <li>Almış olduğunuz kayıp bonusunun maksimum çekim limiti <b>yatırım miktarınıza</b> göre değişkenlik göstermektedir.</li>
+         <li>Herhangi bir anlaşmazlık durumunda <b>RamadaBet tarafından alınan kararlar bağlayıcı</b> nitelikte olacaktır.</li>
+         <li>Bu kurallara ek olarak, sitemizin <b>Genel Kural ve Şartları</b> da dahildir.</li>
+      </ol>
+    </div>
+    <div class="warn reveal">Kampanya ve promosyonların kural ve şartları RamadaBet tarafından herhangi bir sebep gösterilmeksizin değiştirilebilir veya güncellenebilir.</div>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <span>© Ramada Bet</span>
+    <span>18+ · Sorumlu oyun</span>
+  </div>
+</footer>
+
+<script>
+  /* ============ BURAYI DOLDUR ============ */
+  var GUNCEL_ADRES = "#";      /* guncel giris adresi linki */
+  var BONUS_GORSEL = "https://i.ibb.co/gMvkrTc4/g-rsel-2026-09-14-195949108.png";       /* bonus gorselinin linki */
+  /* ======================================= */
+
+  document.querySelectorAll('a[href="#giris"]').forEach(function(a){
+    a.setAttribute('href', GUNCEL_ADRES);
+    a.setAttribute('target', '_blank');
+    a.setAttribute('rel', 'noopener');
+  });
+  /* kurallar satirlarini tek tek belirginlestir */
+  document.querySelectorAll('ol.rules li').forEach(function(li){ li.classList.add('satir'); });
+
+  var hedefler = document.querySelectorAll('.reveal, ol.rules li.satir');
+  if ('IntersectionObserver' in window) {
+    var gozcu = new IntersectionObserver(function(kayitlar){
+      kayitlar.forEach(function(k, i){
+        if (!k.isIntersecting) return;
+        k.target.style.setProperty('--gec', (Math.min(i,6) * 70) + 'ms');
+        k.target.classList.add('gorundu');
+        gozcu.unobserve(k.target);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    hedefler.forEach(function(el){ gozcu.observe(el); });
+  } else {
+    hedefler.forEach(function(el){ el.classList.add('gorundu'); });
+  }
+  /* emniyet: 2.5 sn sonra ne kaldiysa acilir (gorunmez icerik kalmasin) */
+  setTimeout(function(){ hedefler.forEach(function(el){ el.classList.add('gorundu'); }); }, 2500);
+
+  if (BONUS_GORSEL) {
+    var img = document.getElementById('bonus-gorsel');
+    img.src = BONUS_GORSEL;
+    document.getElementById('gorsel-kutu').classList.add('dolu');
+  }
+</script>
+</body>
+</html>
