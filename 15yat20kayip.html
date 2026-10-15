@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ramadabet | %15 Yatırım ve %20 Kayıp Bonusu</title>
+<meta name="description" content="Ramadabet %15 yatırım ve %20 kayıp bonusu: minimum 100₺ yatırım, spor ve casino seçenekleri, çevrim ve çekim koşulları.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+>
+
+<style>
+:root {
+  --bg: #09080a;
+  --bg-2: #0f0d10;
+  --panel: #151216;
+  --panel-2: #1a161b;
+  --line: #2e252b;
+  --line-soft: #241e24;
+  --ink: #f6f3f4;
+  --ink-2: #bdb4b9;
+  --ink-3: #837a80;
+  --accent: #a30827;
+  --accent-2: #c50a30;
+  --r: 12px;
+  --r-s: 8px;
+  --r-xs: 6px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--ink);
+  background: var(--bg);
+  font-family: "Manrope", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  font-size: 15.5px;
+  line-height: 1.62;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+}
+
+.wrap {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-inline: 20px;
+}
+
+/* ÜST MENÜ */
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: rgba(9, 8, 10, 0.86);
+  border-bottom: 1px solid var(--line-soft);
+  backdrop-filter: blur(10px);
+}
+
+.header-in {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-block: 14px;
+}
+
+.header img {
+  display: block;
+  width: auto;
+  height: 60px;
+}
+
+.header-cta {
+  margin-left: auto;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 24px;
+  color: #fff;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: var(--r-s);
+  box-shadow: 0 10px 26px -14px rgba(197, 10, 48, 0.95);
+  font-family: "Sora", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.015em;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background 0.18s ease,
+    border-color 0.18s ease,
+    transform 0.12s ease;
+}
+
+.btn:hover {
+  background: var(--accent-2);
+  border-color: var(--accent-2);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.header .btn {
+  position: relative;
+  overflow: hidden;
+  padding: 10px 18px;
+  font-size: 13px;
+}
+
+.header .btn::after {
+  position: absolute;
+  top: -50%;
+  left: -70%;
+  width: 45%;
+  height: 200%;
+  content: "";
+  background: linear-gradient(
+    100deg,
+    transparent,
+    rgba(255, 255, 255, 0.28),
+    transparent
+  );
+  transform: rotate(16deg);
+  animation: shine 4.5s ease-in-out infinite;
+}
+
+/* HERO */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.hero::before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background:
+    radial-gradient(
+      760px 420px at 72% 0%,
+      rgba(163, 8, 39, 0.34),
+      transparent 62%
+    ),
+    radial-gradient(
+      620px 380px at 4% 14%,
+      rgba(76, 2, 23, 0.42),
+      transparent 62%
+    ),
+    repeating-linear-gradient(
+      115deg,
+      rgba(255, 255, 255, 0.02) 0 1px,
+      transparent 1px 26px
+    );
+}
+
+.hero-in {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  align-items: center;
+  gap: 40px;
+  padding-block: 58px 52px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 12px;
+  color: #efc2cc;
+  background: rgba(163, 8, 39, 0.14);
+  border: 1px solid rgba(197, 10, 48, 0.65);
+  border-radius: var(--r-xs);
+  font-family: "Sora", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.eyebrow i {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: var(--accent-2);
+  border-radius: 1px;
+  animation: blink 1.8s ease-in-out infinite;
+}
+
+h1 {
+  margin: 20px 0 14px;
+  font-family: "Sora", sans-serif;
+  font-size: clamp(32px, 5.2vw, 52px);
+  font-weight: 800;
+  line-height: 1.06;
+  letter-spacing: -0.025em;
+}
+
+h1 b {
+  color: var(--accent-2);
+}
+
+.lede {
+  max-width: 520px;
+  margin: 0 0 26px;
+  color: var(--ink-2);
+  font-size: 16.5px;
+}
+
+/* BİLGİ KUTULARI */
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  overflow: hidden;
+  margin-top: 28px;
+  background: var(--line-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+}
+
+.facts div {
+  padding: 14px 12px;
+  text-align: center;
+  background: #100d11;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.facts div:hover {
+  background: #17121a;
+  transform: translateY(-2px);
+}
+
+.facts span {
+  display: block;
+  color: var(--ink-3);
+  font-size: 10.5px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.facts b {
+  font-family: "Sora", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* PROMOSYON GÖRSELİ */
+
+.visual {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  margin: 0;
+  background: #0e0c0f;
+  border-radius: var(--r);
+}
+
+.visual::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  width: 170%;
+  aspect-ratio: 1;
+  content: "";
+  background: conic-gradient(
+    from 0deg,
+    transparent 0 58%,
+    rgba(163, 8, 39, 0.85) 74%,
+    #ff4d6d 84%,
+    rgba(163, 8, 39, 0.85) 90%,
+    transparent 100%
+  );
+  translate: -50% -50%;
+  animation: rotate-border 5.5s linear infinite;
+}
+
+.visual-in {
+  position: relative;
+  z-index: 1;
+  display: block;
+  overflow: hidden;
+  margin: 1.5px;
+  background: linear-gradient(
+    160deg,
+    #1c1016 0%,
+    #120f13 55%,
+    #0e0c0f 100%
+  );
+  border-radius: 10.5px;
+}
+
+.visual-in::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    115deg,
+    rgba(255, 255, 255, 0.03) 0 1px,
+    transparent 1px 16px
+  );
+}
+
+.visual img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.visual-shine {
+  position: absolute;
+  top: -40%;
+  left: -60%;
+  z-index: 3;
+  width: 40%;
+  height: 180%;
+  content: "";
+  pointer-events: none;
+  background: linear-gradient(
+    100deg,
+    transparent,
+    rgba(255, 255, 255, 0.14),
+    transparent
+  );
+  transform: rotate(14deg);
+  animation: shine 5.5s ease-in-out infinite;
+}
+
+/* GENEL BÖLÜMLER */
+
+section.blk {
+  padding-block: 52px;
+}
+
+.blk + .blk {
+  border-top: 1px solid var(--line-soft);
+}
+
+h2 {
+  margin: 0 0 6px;
+  font-family: "Sora", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.sub {
+  margin: 0 0 26px;
+  color: var(--ink-3);
+  font-size: 13.5px;
+}
+
+/* ADIMLAR */
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.step {
+  position: relative;
+  padding: 22px 20px;
+  background: var(--panel);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r);
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.step:hover {
+  background: var(--panel-2);
+  border-color: rgba(197, 10, 48, 0.55);
+  transform: translateY(-4px);
+}
+
+.step-no {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 14px;
+  color: #fff;
+  background: var(--accent-2);
+  border-radius: var(--r-xs);
+  font-family: "Sora", sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.step h3 {
+  margin: 0 0 6px;
+  font-family: "Sora", sans-serif;
+  font-size: 15.5px;
+  font-weight: 700;
+}
+
+.step p {
+  margin: 0;
+  color: var(--ink-2);
+  font-size: 13.8px;
+}
+
+.step p b {
+  color: var(--ink);
+}
+
+/* KURALLAR */
+
+.rules-box {
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    var(--panel) 0%,
+    var(--bg-2) 100%
+  );
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+}
+
+.rules-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.rules-head i {
+  display: block;
+  width: 4px;
+  height: 18px;
+  background: var(--accent);
+  border-radius: 1px;
+}
+
+.rules-head b {
+  font-family: "Sora", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+ol.rules {
+  margin: 0;
+  padding: 10px 24px 26px;
+  list-style: none;
+  counter-reset: rule;
+}
+
+ol.rules li {
+  position: relative;
+  padding: 14px 0 14px 38px;
+  color: var(--ink-2);
+  border-bottom: 1px solid var(--line-soft);
+  font-size: 14.2px;
+  counter-increment: rule;
+}
+
+ol.rules li:last-child {
+  border-bottom: 0;
+}
+
+ol.rules li::before {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  color: var(--accent-2);
+  content: counter(rule, decimal-leading-zero);
+  font-family: "Sora", sans-serif;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+ol.rules li b {
+  color: var(--ink);
+}
+
+.warn {
+  margin-top: 18px;
+  padding: 14px 16px;
+  color: var(--ink-2);
+  background: var(--panel);
+  border: 1px solid var(--line-soft);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r-s);
+  font-size: 13.2px;
+}
+
+/* ALT BİLGİ */
+
+.footer {
+  padding-block: 24px 40px;
+  color: var(--ink-3);
+  border-top: 1px solid var(--line-soft);
+  font-size: 12.5px;
+}
+
+.footer-in {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+/* GÖRÜNÜM ANİMASYONLARI */
+
+html.js .reveal {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+html.js .reveal.gorundu {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.55s ease var(--gec, 0s),
+    transform 0.55s cubic-bezier(0.2, 0.75, 0.3, 1) var(--gec, 0s);
+}
+
+html.js ol.rules li.satir {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+html.js ol.rules li.satir.gorundu {
+  opacity: 1;
+  transform: none;
+  transition:
+    opacity 0.45s ease var(--gec, 0s),
+    transform 0.45s cubic-bezier(0.2, 0.75, 0.3, 1) var(--gec, 0s);
+}
+
+@keyframes rotate-border {
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes shine {
+  0%,
+  62% {
+    left: -60%;
+  }
+
+  88%,
+  100% {
+    left: 120%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+    box-shadow: 0 0 0 0 rgba(197, 10, 48, 0.55);
+  }
+
+  50% {
+    opacity: 0.55;
+    box-shadow: 0 0 0 5px rgba(197, 10, 48, 0);
+  }
+}
+
+/* MOBİL */
+
+@media (max-width: 820px) {
+  .hero-in {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding-block: 40px 42px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .facts {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .header img {
+    height: 46px;
+  }
+
+  .header .btn {
+    padding: 9px 14px;
+    font-size: 12.5px;
+  }
+
+  ol.rules {
+    padding-inline: 18px;
+  }
+
+  .rules-head {
+    padding-inline: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js .reveal,
+  html.js ol.rules li.satir {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .visual::before,
+  .visual-shine,
+  .eyebrow i,
+  .header .btn::after {
+    animation: none !important;
+  }
+}
+/* Küçük ekranlar ve klavye erişimi */
+.hero-in > *, .header-in > * { min-width: 0; }
+.header img { max-width: 100%; object-fit: contain; }
+.header-in > a { flex: 0 1 190px; }
+.header-cta { flex-shrink: 0; }
+.btn { background: var(--accent-2); border-color: var(--accent-2); }
+.btn:hover { background: #e30b38; border-color: #e30b38; }
+a:focus-visible { outline: 2px solid #ff91a7; outline-offset: 5px; }
+h1, h2, h3, p, .rules li { overflow-wrap: break-word; }
+.step p strong, .rules strong { color: var(--ink); }
+.rules-head h3 { margin: 0; font-family: "Sora", sans-serif; font-size: 15px; }
+.rules-box + .rules-box { margin-top: 18px; }
+.hero-hint { margin: 16px 0 0; color: var(--ink-2); font-size: 12.5px; }
+@media (max-width: 520px) {
+  .wrap { padding-inline: 16px; }
+  .header-in { gap: 12px; }
+  .header img { height: auto; max-height: 46px; }
+  .header .btn { padding-inline: 12px; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="wrap header-in">
+    <a href="https://bit.ly/rmdsosyal" target="_blank" rel="noopener noreferrer" aria-label="Ramadabet güncel adres">
+      <img src="https://ramada.umydigital.com/static/uploads/logo-00b130d1fd434234.png" alt="Ramadabet">
+    </a>
+    <div class="header-cta">
+      <a class="btn" href="https://bit.ly/rmdsosyal" target="_blank" rel="noopener noreferrer">Güncel Adres</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="bonus-baslik">
+    <div class="wrap hero-in">
+      <div>
+        <span class="eyebrow reveal"><i aria-hidden="true"></i> YATIRIM + KAYIP BONUSU</span>
+        <h1 class="reveal" id="bonus-baslik">%15 YATIRIM + <b>%20 KAYIP BONUSU!</b></h1>
+        <p class="lede reveal">Ramadabet'te minimum <b>100₺</b> yatırımınıza <b>%15 yatırım bonusu</b> ve <b>%20 kayıp bonusu</b> fırsatından yararlanabilirsiniz.</p>
+        <div class="facts reveal">
+          <div><span>Minimum Yatırım</span><b>100₺</b></div>
+          <div><span>Yatırım Bonusu</span><b>%15</b></div>
+          <div><span>Kayıp Bonusu</span><b>%20</b></div>
+        </div>
+        <p class="hero-hint reveal">Yatırım bonusunda bonusun 5 katı + anaparanın 1 katı; kayıp bonusunda alınan bonusun 1 katı çevrim şartı vardır.</p>
+      </div>
+      <figure class="visual reveal" id="gorsel-kutu">
+        <div class="visual-in">
+          <img id="bonus-gorsel" src="https://i.ibb.co/cqJjqRc/MOB-L.jpg" alt="Ramadabet %15 Yatırım ve %20 Kayıp Bonusu" fetchpriority="high" decoding="async">
+          <span class="visual-shine" aria-hidden="true"></span>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="blk" aria-labelledby="detay-baslik">
+    <div class="wrap">
+      <h2 class="reveal" id="detay-baslik">Bonus Detayları Nelerdir?</h2>
+      <p class="sub reveal">Spor veya casino alanını seçin; bonusunuzu aşağıdaki çevrim ve çekim koşullarıyla kullanın.</p>
+      <div class="steps">
+        <article class="step reveal">
+          <div class="step-no" aria-hidden="true">01</div>
+          <h3>Yatırımınızı Yapın</h3>
+          <p>Minimum <strong>100₺</strong> yatırımınıza <strong>%15 yatırım bonusu</strong> ve <strong>%20 kayıp bonusundan</strong> faydalanabilirsiniz.</p>
+        </article>
+        <article class="step reveal">
+          <div class="step-no" aria-hidden="true">02</div>
+          <h3>Bonusunuzu Seçin</h3>
+          <p><strong>Spor Çevrimsiz</strong> veya <strong>Casino Çevrimsiz</strong> yatırım bonusu talep edebilirsiniz.</p>
+        </article>
+        <article class="step reveal">
+          <div class="step-no" aria-hidden="true">03</div>
+          <h3>Çevrimi Tamamlayın</h3>
+          <p>Her iki alanda da <strong>bonusun 5 katı</strong> ve <strong>anaparanın 1 katı</strong> çevrim yapmanız gerekmektedir.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" aria-labelledby="kural-baslik">
+    <div class="wrap">
+      <h2 class="reveal" id="kural-baslik">Bonus Çevrimi ve Kuralları</h2>
+      <p class="sub reveal">Bonustan yararlanmadan önce yatırım ve kayıp bonusuna ait tüm koşulları dikkatlice okuyunuz.</p>
+
+      <div class="rules-box reveal">
+        <div class="rules-head"><i aria-hidden="true"></i><h3>Yatırım Bonusları İçin</h3></div>
+        <ol class="rules">
+          <li>Her iki alan için de <b>bonusun 5 katı</b> ve <b>anaparanızın 1 katı</b> çevrim yapmanız gerekmektedir.</li>
+          <li>Bonus miktarının maksimum <b>30 katı</b> çekim yapabilirsiniz.</li>
+          <li>Spor bahislerinde minimum <b>2 maç kombine</b> ve her maç <b>en az 1.60 oran</b> olacak şekilde katılım sağlamalısınız.</li>
+          <li>Spor bahislerinde <b>anaparanızı ve bonusunuzu farklı maçlara</b> oynamanız gerekmektedir.</li>
+          <li>Bu promosyon <b>diğer bonuslarla birleştirilemez.</b></li>
+          <li>Bonus çevrimini tamamlamadan <b>CASHOUT (bahis bozdurma)</b> yapmak kural dışı sayılmaktadır.</li>
+          <li><b>Sistem kuponları</b>, aynı maça alınan <b>Alt/Üst, Tek/Çift</b> gibi iki olasılıklı bahisler ve <b>beraberlik iade durumunda iade edilen bahisler</b> çevrime dahil değildir.</li>
+          <li><b>E-Basketbol, E-Futbol, CYBER ve SRL</b> gibi sanal sporlar çevrime dahil değildir.</li>
+          <li>Bu promosyondan yararlandığınız takdirde <b>çapraz ve zincir bahisler yapamazsınız.</b> Aksi takdirde <b>anapara iadesi</b> sağlanmaktadır.</li>
+          <li>Casino bonusu <b>tüm sağlayıcılarda</b> geçerlidir. <b>Three Lines, Four Lines (3 Lines, 4 Lines)</b> slot oyunları bu bonus kampanyasında <b>çevrime dahil değildir.</b></li>
+        </ol>
+      </div>
+
+      <div class="rules-box reveal">
+        <div class="rules-head"><i aria-hidden="true"></i><h3>Kayıp Bonusu İçin</h3></div>
+        <ol class="rules">
+          <li>Alınan kayıp bonusunun <b>1 katı</b> çevrimi mevcuttur.</li>
+          <li>Kayıp bonusunun maksimum <b>10 katı</b> kadar çekim yapabilirsiniz.</li>
+          <li>Yatırım bonusu ile çekimi bulunan üyelerimiz kayıp bonusundan <b>yararlanamamaktadır.</b></li>
+        </ol>
+      </div>
+
+      <div class="warn reveal">Kampanya ve promosyonların kural ve şartları Ramadabet tarafından herhangi bir sebep gösterilmeksizin değiştirilebilir veya güncellenebilir.</div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <span>© Ramadabet</span>
+    <span>18+ · Sorumlu oyun</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  // JavaScript kapalıysa tüm içerik ve kampanya görseli görünür kalır.
+  if (!("IntersectionObserver" in window)) return;
+
+  document.querySelectorAll("ol.rules li").forEach(function (satir) {
+    satir.classList.add("satir");
+  });
+  var hedefler = document.querySelectorAll(".reveal, ol.rules li.satir");
+  var gozcu = new IntersectionObserver(function (kayitlar) {
+    kayitlar.forEach(function (kayit, sira) {
+      if (!kayit.isIntersecting) return;
+      kayit.target.style.setProperty("--gec", Math.min(sira, 6) * 70 + "ms");
+      kayit.target.classList.add("gorundu");
+      gozcu.unobserve(kayit.target);
+    });
+  }, { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
+
+  document.documentElement.classList.add("js");
+  window.setTimeout(function () {
+    hedefler.forEach(function (hedef) { hedef.classList.add("gorundu"); });
+    gozcu.disconnect();
+  }, 2500);
+  hedefler.forEach(function (hedef) { gozcu.observe(hedef); });
+})();
+</script>
+</body>
+</html>
