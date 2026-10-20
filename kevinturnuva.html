@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RamadaBet | Kevin Hart Big Promosyonu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#09080A;
+    --bg-2:#0F0D10;
+    --panel:#151216;
+    --panel-2:#1A161B;
+    --line:#2E252B;
+    --line-soft:#241E24;
+    --ink:#F6F3F4;
+    --ink-2:#BDB4B9;
+    --ink-3:#837A80;
+    --accent:#A30827;
+    --accent-2:#C50A30;
+    --r:12px;
+    --r-s:8px;
+    --r-xs:6px;
+  }
+
+  *{box-sizing:border-box}
+
+  html,body{margin:0;padding:0}
+
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Manrope',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+    font-size:15.5px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{
+    max-width:960px;
+    margin:0 auto;
+    padding-inline:20px;
+  }
+
+  a{color:inherit}
+
+  a:focus-visible{
+    outline:2px solid #FF91A7;
+    outline-offset:5px;
+  }
+
+  /* HEADER */
+
+  .header{
+    position:sticky;
+    top:0;
+    z-index:30;
+    border-bottom:1px solid var(--line-soft);
+    background:rgba(9,8,10,.86);
+    backdrop-filter:blur(10px);
+  }
+
+  .header-in{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding-block:14px;
+  }
+
+  .header-logo{
+    flex:0 1 190px;
+    min-width:0;
+  }
+
+  .header img{
+    display:block;
+    width:auto;
+    max-width:100%;
+    height:60px;
+    object-fit:contain;
+  }
+
+  .header-cta{
+    margin-left:auto;
+    flex-shrink:0;
+  }
+
+  .btn{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    padding:10px 18px;
+    border:1px solid var(--accent-2);
+    border-radius:var(--r-s);
+    background:var(--accent-2);
+    color:#FFF;
+    font-family:'Sora',sans-serif;
+    font-size:13px;
+    font-weight:700;
+    text-decoration:none;
+    box-shadow:0 10px 26px -14px rgba(197,10,48,.95);
+    transition:background .18s ease,transform .12s ease;
+  }
+
+  .btn:hover{
+    background:#E30B38;
+    border-color:#E30B38;
+  }
+
+  .btn:active{transform:translateY(1px)}
+
+  .btn::after{
+    content:"";
+    position:absolute;
+    top:-50%;
+    left:-70%;
+    width:45%;
+    height:200%;
+    background:linear-gradient(
+      100deg,
+      transparent,
+      rgba(255,255,255,.28),
+      transparent
+    );
+    transform:rotate(16deg);
+    animation:parla 4.5s ease-in-out infinite;
+  }
+
+  /* HERO */
+
+  .hero{
+    position:relative;
+    overflow:hidden;
+    border-bottom:1px solid var(--line-soft);
+  }
+
+  .hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+      radial-gradient(
+        760px 420px at 72% 0%,
+        rgba(163,8,39,.34),
+        transparent 62%
+      ),
+      radial-gradient(
+        620px 380px at 4% 14%,
+        rgba(76,2,23,.42),
+        transparent 62%
+      ),
+      repeating-linear-gradient(
+        115deg,
+        rgba(255,255,255,.02) 0 1px,
+        transparent 1px 26px
+      );
+  }
+
+  .hero-in{
+    position:relative;
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:40px;
+    align-items:center;
+    padding-block:58px 52px;
+  }
+
+  .hero-in>*{min-width:0}
+
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    padding:7px 12px;
+    border:1px solid rgba(197,10,48,.65);
+    border-radius:var(--r-xs);
+    background:rgba(163,8,39,.14);
+    color:#EFC2CC;
+    font-family:'Sora',sans-serif;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+  }
+
+  .eyebrow i{
+    display:block;
+    width:6px;
+    height:6px;
+    flex-shrink:0;
+    border-radius:1px;
+    background:var(--accent-2);
+    animation:yanip 1.8s ease-in-out infinite;
+  }
+
+  h1{
+    margin:20px 0 14px;
+    font-family:'Sora',sans-serif;
+    font-size:clamp(32px,5.2vw,52px);
+    font-weight:800;
+    line-height:1.08;
+    letter-spacing:-.025em;
+    overflow-wrap:break-word;
+  }
+
+  h1 b{color:var(--accent-2)}
+
+  .lede{
+    max-width:520px;
+    margin:0 0 26px;
+    color:var(--ink-2);
+    font-size:16.5px;
+  }
+
+  /* BİLGİ KARTLARI */
+
+  .facts{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1px;
+    overflow:hidden;
+    margin-top:28px;
+    border:1px solid var(--line);
+    border-radius:var(--r);
+    background:var(--line-soft);
+  }
+
+  .facts div{
+    padding:14px 12px;
+    text-align:center;
+    background:#100D11;
+    transition:background .25s ease;
+  }
+
+  .facts div:hover{background:#17121A}
+
+  .facts span{
+    display:block;
+    color:var(--ink-3);
+    font-size:10.5px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+  }
+
+  .facts b{
+    font-family:'Sora',sans-serif;
+    font-size:14px;
+    font-weight:700;
+  }
+
+  /* PROMOSYON GÖRSELİ */
+
+  .visual{
+    position:relative;
+    isolation:isolate;
+    overflow:hidden;
+    margin:0;
+    border-radius:var(--r);
+    background:#0E0C0F;
+  }
+
+  .visual::before{
+    content:"";
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:0;
+    width:170%;
+    aspect-ratio:1;
+    translate:-50% -50%;
+    background:conic-gradient(
+      from 0deg,
+      transparent 0 58%,
+      rgba(163,8,39,.85) 74%,
+      #FF4D6D 84%,
+      rgba(163,8,39,.85) 90%,
+      transparent 100%
+    );
+    animation:donce 5.5s linear infinite;
+  }
+
+  .visual-in{
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+    margin:1.5px;
+    border-radius:10.5px;
+    background:#120F13;
+  }
+
+  .visual img{
+    display:block;
+    width:100%;
+    height:auto;
+    object-fit:contain;
+  }
+
+  .visual-shine{
+    position:absolute;
+    top:-40%;
+    left:-60%;
+    z-index:3;
+    width:40%;
+    height:180%;
+    pointer-events:none;
+    background:linear-gradient(
+      100deg,
+      transparent,
+      rgba(255,255,255,.14),
+      transparent
+    );
+    transform:rotate(14deg);
+    animation:parla 5.5s ease-in-out infinite;
+  }
+
+  /* BÖLÜMLER */
+
+  section.blk{padding-block:52px}
+
+  .blk+.blk{border-top:1px solid var(--line-soft)}
+
+  h2{
+    margin:0 0 6px;
+    font-family:'Sora',sans-serif;
+    font-size:23px;
+    font-weight:700;
+    letter-spacing:-.01em;
+  }
+
+  .sub{
+    margin:0 0 26px;
+    color:var(--ink-3);
+    font-size:13.5px;
+  }
+
+  /* KATILIM ADIMLARI */
+
+  .steps{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+  }
+
+  .step{
+    padding:22px 20px;
+    border:1px solid var(--line-soft);
+    border-radius:var(--r);
+    background:var(--panel);
+    transition:
+      border-color .25s ease,
+      transform .25s ease,
+      background .25s ease;
+  }
+
+  .step:hover{
+    transform:translateY(-4px);
+    border-color:rgba(197,10,48,.55);
+    background:var(--panel-2);
+  }
+
+  .step-no{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:30px;
+    height:30px;
+    margin-bottom:14px;
+    border-radius:var(--r-xs);
+    background:var(--accent-2);
+    color:#FFF;
+    font-family:'Sora',sans-serif;
+    font-size:13px;
+    font-weight:800;
+  }
+
+  .step h3{
+    margin:0 0 6px;
+    font-family:'Sora',sans-serif;
+    font-size:15.5px;
+    font-weight:700;
+  }
+
+  .step p{
+    margin:0;
+    color:var(--ink-2);
+    font-size:13.8px;
+  }
+
+  .step b,.rules b{color:var(--ink)}
+
+  /* KURALLAR */
+
+  .rules-box{
+    overflow:hidden;
+    border:1px solid var(--line);
+    border-radius:var(--r);
+    background:linear-gradient(
+      180deg,
+      var(--panel),
+      var(--bg-2)
+    );
+  }
+
+  .rules-head{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:18px 24px;
+    border-bottom:1px solid var(--line-soft);
+  }
+
+  .rules-head h3{
+    margin:0;
+    font-family:'Sora',sans-serif;
+    font-size:15px;
+    font-weight:700;
+  }
+
+  .rules-head i{
+    display:block;
+    flex-shrink:0;
+    width:4px;
+    height:18px;
+    border-radius:1px;
+    background:var(--accent-2);
+  }
+
+  ol.rules{
+    margin:0;
+    padding:10px 24px 26px;
+    list-style:none;
+    counter-reset:rule;
+  }
+
+  ol.rules>li{
+    position:relative;
+    padding:14px 0 14px 38px;
+    border-bottom:1px solid var(--line-soft);
+    color:var(--ink-2);
+    font-size:14.2px;
+    overflow-wrap:break-word;
+    counter-increment:rule;
+  }
+
+  ol.rules>li:last-child{border-bottom:0}
+
+  ol.rules>li::before{
+    content:counter(rule,decimal-leading-zero);
+    position:absolute;
+    top:15px;
+    left:0;
+    color:var(--accent-2);
+    font-family:'Sora',sans-serif;
+    font-size:11.5px;
+    font-weight:700;
+    letter-spacing:.06em;
+  }
+
+  .rules p{margin:10px 0 0}
+
+  /* ÖDÜL TABLOSU */
+
+  .prize-wrap{
+    overflow-x:auto;
+    margin-top:12px;
+    border:1px solid var(--line);
+    border-radius:var(--r-s);
+  }
+
+  .prize-table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:13px;
+  }
+
+  .prize-table caption{
+    padding:10px 14px;
+    text-align:left;
+    color:var(--ink);
+    font-weight:700;
+    background:#100D11;
+  }
+
+  .prize-table th,
+  .prize-table td{
+    padding:12px 14px;
+    border-top:1px solid var(--line-soft);
+    text-align:left;
+  }
+
+  .prize-table th{
+    color:var(--ink);
+    font-size:12px;
+  }
+
+  .prize-table td:last-child{
+    color:var(--ink);
+    font-weight:700;
+    white-space:nowrap;
+  }
+
+  /* FOOTER */
+
+  .footer{
+    padding-block:24px 40px;
+    border-top:1px solid var(--line-soft);
+    color:var(--ink-3);
+    font-size:12.5px;
+  }
+
+  .footer-in{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:14px;
+  }
+
+  /* ANİMASYONLAR */
+
+  html.js .reveal,
+  html.js .satir{
+    opacity:0;
+    transform:translateY(16px);
+  }
+
+  html.js .gorundu{
+    opacity:1;
+    transform:none;
+    transition:
+      opacity .55s ease var(--gec,0s),
+      transform .55s ease var(--gec,0s);
+  }
+
+  @keyframes donce{
+    to{rotate:360deg}
+  }
+
+  @keyframes parla{
+    0%,62%{left:-60%}
+    88%,100%{left:120%}
+  }
+
+  @keyframes yanip{
+    0%,100%{opacity:1}
+    50%{opacity:.55}
+  }
+
+  /* MOBİL */
+
+  @media(max-width:820px){
+    .hero-in{
+      grid-template-columns:1fr;
+      gap:30px;
+      padding-block:40px 42px;
+    }
+
+    .steps{grid-template-columns:1fr}
+  }
+
+  @media(max-width:520px){
+    .wrap{padding-inline:16px}
+
+    .header img{
+      height:auto;
+      max-height:46px;
+    }
+
+    .header .btn{
+      padding:9px 12px;
+      font-size:12.5px;
+    }
+
+    ol.rules{padding-inline:18px}
+
+    .rules-head{padding-inline:18px}
+
+    .prize-table th,
+    .prize-table td{
+      padding:10px 8px;
+    }
+  }
+
+  @media(prefers-reduced-motion:reduce){
+    *,
+    *::before,
+    *::after{
+      animation:none!important;
+      transition:none!important;
+    }
+
+    html.js .reveal,
+    html.js .satir{
+      opacity:1!important;
+      transform:none!important;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="wrap header-in">
+    <a
+      class="header-logo"
+      href="https://bit.ly/rmdsosyal"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="RamadaBet güncel adres"
+    >
+      <img
+        src="https://ramada.umydigital.com/static/uploads/logo-00b130d1fd434234.png"
+        alt="RamadaBet"
+      >
+    </a>
+
+    <div class="header-cta">
+      <a
+        class="btn"
+        href="https://bit.ly/rmdsosyal"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Güncel Adres
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" aria-labelledby="kampanya-baslik">
+    <div class="wrap hero-in">
+      <div>
+        <span class="eyebrow reveal">
+          <i aria-hidden="true"></i>
+          PRAGMATIC PLAY PROMOSYONU
+        </span>
+
+        <h1 class="reveal" id="kampanya-baslik">
+          KEVIN HART <b>BIG PROMOSYON!</b>
+        </h1>
+
+        <p class="lede reveal">
+          Katılımcı Pragmatic Play oyunlarında harfleri toplayın;
+          <b>Ücretsiz Fiş</b> ödülleri kazanma fırsatına katılın.
+        </p>
+
+        <div class="facts reveal">
+          <div>
+            <span>Başlangıç</span>
+            <b>19 Ekim 2026</b>
+          </div>
+          <div>
+            <span>Bitiş</span>
+            <b>7 Kasım 2026</b>
+          </div>
+          <div>
+            <span>Ödül Türü</span>
+            <b>Ücretsiz Fiş</b>
+          </div>
+          <div>
+            <span>Fiş Kullanım Süresi</span>
+            <b>48 Saat</b>
+          </div>
+        </div>
+      </div>
+
+      <figure class="visual reveal">
+        <div class="visual-in">
+          <img
+            src="https://i.ibb.co/vvZ9Xc3f/656X440.jpg"
+            alt="RamadaBet Kevin Hart Big — Pragmatic Play promosyonu"
+            width="656"
+            height="440"
+            fetchpriority="high"
+          >
+          <span class="visual-shine" aria-hidden="true"></span>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="blk" aria-labelledby="katilim-baslik">
+    <div class="wrap">
+      <h2 class="reveal" id="katilim-baslik">
+        Nasıl Katılabilirsiniz?
+      </h2>
+
+      <p class="sub reveal">
+        Katılım, harf toplama ve ödül kullanım koşullarını inceleyiniz.
+      </p>
+
+      <div class="steps">
+        <article class="step reveal">
+          <div class="step-no" aria-hidden="true">01</div>
+          <h3>Katılımcı Oyuna Giriş Yapın</h3>
+          <p>
+            Promosyona katılmak için
+            <b>katılımcı oyunlardan herhangi biri</b>
+            aracılığıyla giriş yapın.
+          </p>
+        </article>
+
+        <article class="step reveal">
+          <div class="step-no" aria-hidden="true">02</div>
+          <h3>Harfleri Toplayın</h3>
+          <p>
+            Oyuna özel minimum bahis gerekliliklerini karşılayan
+            <b>gerçek para bahisleriyle</b> rastgele çıkan harfleri toplayın.
+          </p>
+        </article>
+
+        <article class="step reveal">
+          <div class="step-no" aria-hidden="true">03</div>
+          <h3>Ödül Fişlerinizi Kullanın</h3>
+          <p>
+            Tanımlanan <b>Ücretsiz Fişleri</b>, tanımlandıkları andan
+            itibaren <b>48 saat içinde</b> talep edin ve kullanın.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" aria-labelledby="kurallar-baslik">
+    <div class="wrap">
+      <h2 class="reveal" id="kurallar-baslik">
+        Kurallar ve Koşullar
+      </h2>
+
+      <p class="sub reveal">
+        Kevin Hart Big promosyonuna katılmadan önce tüm koşulları
+        dikkatlice okuyunuz.
+      </p>
+
+      <div class="rules-box reveal">
+        <div class="rules-head">
+          <i aria-hidden="true"></i>
+          <h3>Kevin Hart Big — Promosyon Şartları</h3>
+        </div>
+
+        <ol class="rules">
+
+          <li>
+            Kevin Hart Big promosyonu,
+            <b>19 Ekim 2026 tarihinden 7 Kasım 2026 tarihine kadar</b>
+            tüm Pragmatic Play slot ve Canlı Casino oyunlarında geçerlidir.
+            Bu, <b>Pragmatic Play tarafından yürütülen</b> ve ödül havuzlarının
+            katılımcı operatörler arasında paylaşıldığı, ağ genelinde bir
+            promosyondur.
+          </li>
+
+          <li>
+            Kevin Hart Big promosyonuna katılmak için
+            <b>Katılımcı Oyunlardan herhangi biri aracılığıyla giriş yapmanız</b>
+            gerekmektedir. Giriş yaptığınızda promosyonun tamamına katılmaya
+            hak kazanmış olursunuz.
+          </li>
+
+          <li>
+            Rastgele bir ödül kazanmaya hak kazanabilmek için Katılımcı
+            Oyunlardan herhangi birinde,
+            <b>oyun özelindeki minimum bahis gerekliliklerine uygun</b>
+            olacak şekilde, dilediğiniz tutarda
+            <b>gerçek parayla bahis yapmalı</b> ve belirlenen tüm harfleri
+            toplamalısınız.
+
+            <p>
+              Her bir Geçerli Bahis sırasında rastgele bir harf ortaya
+              çıkabilir; her bir Geçerli Bahis için
+              <b>en fazla bir (1) karakter</b> verilir. Söz konusu karakterler
+              <b>“K”, “E”, “V”, “I” ve “N”</b> olup bir araya geldiklerinde
+              <b>“KEVIN”</b> kelimesini oluştururlar.
+            </p>
+          </li>
+
+          <li>
+            Harfler yalnızca rastgele bir ödül kazanmaya uygun olup olmadığınızı
+            belirlemek için kullanılır. Ödül kazanabilmek için
+            <b>harflerin tamamını toplamanız</b> gerekir. Harflerin sadece bir
+            kısmını toplamanız durumunda
+            <b>herhangi bir ödül, armağan veya başka bir avantaj verilmez.</b>
+          </li>
+
+          <li>
+            Bir harf topladıktan sonra
+            <b>“KEVIN” kelimesini tamamlayana dek</b> oynamaya ve sonraki
+            <b>“Uygun Bahisler”</b> üzerinden yeni harfler toplamaya devam
+            edebilirsiniz.
+          </li>
+
+          <li>
+            Ödüller, oyun içi arayüzde veya aşağıdaki tabloda belirtildiği
+            şekilde <b>“Ücretsiz Fişler”</b> olarak verilecektir. Bu fişler;
+            <b>Gates of Olympus Roulette, Mega Wheel, Mega Roulette, Money Time
+            ve Sweet Bonanza CandyLand</b> adlı Canlı Casino oyunlarının
+            herhangi birinde kullanılabilir.
+          </li>
+
+          <li>
+            Ücretsiz fişlerin hesabınıza tanımlanması
+            <b>5 dakikaya kadar</b> sürebilir. Ödül bu süre sonunda görünmezse
+            oyunu veya
+            <b>Pragmatic Play Canlı Casino lobisindeki promosyonlar bölümünü
+            yenilemeniz</b> gerekebilir.
+          </li>
+
+          <li>
+            Ücretsiz Fişler,
+            <b>Ücretsiz Fiş kurallarına ve seçilen oyuna tabi</b> olarak bahis
+            yapmak için kullanılabilir.
+          </li>
+
+          <li>
+            Canlı Casino için katılımcı oyunlar şunlardır:
+            <b>Gates of Olympus Roulette, Mega Wheel, Mega Roulette, Money Time
+            ve Sweet Bonanza CandyLand.</b>
+          </li>
+
+          <li>
+            Her bir Geçerli Bahis sırasında rastgele bir harf kazanılabilir;
+            her bir Geçerli Bahis için <b>en fazla bir (1) karakter</b> verilir.
+            Bu karakterler <b>“P”, “L”, “A” ve “Y”</b> olup bir araya
+            geldiklerinde <b>“PLAY”</b> kelimesini oluşturur.
+          </li>
+
+          <li>
+            <b>Ücretsiz Fişler ve gerçek parayla yapılan bahisler</b>,
+            aynı oyun turu içerisinde <b>birlikte kullanılamaz.</b>
+          </li>
+
+          <li>
+            Her bir oyun turunda
+            <b>en fazla dört (4) adet Ücretsiz Fiş</b> kullanabilirsiniz.
+          </li>
+
+          <li>
+            Ücretsiz Fişlerin, tanımlandıkları andan itibaren
+            <b>en geç kırk sekiz (48) saat içinde talep edilmesi ve
+            kullanılması</b> gerekir. Bu süre zarfında talep edilmeyen veya
+            kullanılmayan fişlerin
+            <b>geçerliliği sona erer ve söz konusu hak kaybedilir.</b>
+          </li>
+
+          <li>
+            Ücretsiz Fişler ile elde edilebilecek kazançlar aşağıdaki
+            tutarlarla sınırlandırılmıştır:
+
+            <div class="prize-wrap">
+              <table class="prize-table">
+                <caption>
+                  Ücretsiz Fiş Ödülleri ve Kazanç Limitleri
+                </caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Ödül</th>
+                    <th scope="col">Fiş Değeri</th>
+                    <th scope="col">Maksimum Kazanç</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10 adet Ücretsiz Fiş</td>
+                    <td>Her biri 0,2 €</td>
+                    <td>20 €</td>
+                  </tr>
+                  <tr>
+                    <td>50 adet Ücretsiz Fiş</td>
+                    <td>Her biri 0,2 €</td>
+                    <td>100 €</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+
+          <li>
+            Teknik sorunlar, kesintiler veya oyun arızaları durumunda
+            <b>etkilenen turlar ya da ödül sonuçları</b>, operatörün standart
+            prosedürleri doğrultusunda
+            <b>geçersiz kılınabilir veya eski haline getirilebilir.</b>
+          </li>
+
+          <li>
+            Pragmatic Play; katılıma veya ödül dağıtımına etki edebilecek
+            <b>gecikmelerden, bağlantı sorunlarından, cihaz arızalarından ya
+            da operatör platformundaki kesintilerden sorumlu değildir.</b>
+          </li>
+
+          <li>
+            Pragmatic Play, olası kötüye kullanımları tespit etmek amacıyla
+            <b>oyuncuların faaliyetlerini inceleme hakkını saklı tutar.</b>
+            Yapılan inceleme sonucunda kötü niyetli veya yasa dışı davranışlar
+            tespit edilirse Pragmatic Play
+            <b>kazanılan tutarları iptal edebilir</b> ve oyuncunun
+            <b>gelecekteki promosyonlara katılımını kısıtlayabilir.</b>
+            Ayrıca Pragmatic Play ve oyuncunun kayıtlı olduğu platformun
+            sahibi, promosyonun tüm katılımcılar için adil bir şekilde
+            yürütülmesini sağlamak adına
+            <b>yasal yollara başvurabilir.</b>
+          </li>
+
+          <li>
+            Yukarıdaki hüküm ve koşullar, kayıtlı olduğunuz platform sahibinin
+            <b>Genel Hüküm ve Koşulları</b> ile birlikte okunmalıdır.
+          </li>
+
+        </ol>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <span>© RamadaBet</span>
+    <span>18+ · Sorumlu oyun</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  if (!("IntersectionObserver" in window)) return;
+
+  document.querySelectorAll("ol.rules > li").forEach(function(li){
+    li.classList.add("satir");
+  });
+
+  var hedefler = document.querySelectorAll(".reveal, .satir");
+
+  var gozcu = new IntersectionObserver(function(kayitlar){
+    kayitlar.forEach(function(k, i){
+      if (!k.isIntersecting) return;
+
+      k.target.style.setProperty(
+        "--gec",
+        Math.min(i, 6) * 70 + "ms"
+      );
+
+      k.target.classList.add("gorundu");
+      gozcu.unobserve(k.target);
+    });
+  }, {
+    rootMargin: "0px 0px -8% 0px",
+    threshold: 0.12
+  });
+
+  document.documentElement.classList.add("js");
+
+  setTimeout(function(){
+    hedefler.forEach(function(el){
+      el.classList.add("gorundu");
+    });
+
+    gozcu.disconnect();
+  }, 2500);
+
+  hedefler.forEach(function(el){
+    gozcu.observe(el);
+  });
+})();
+</script>
+
+</body>
+</html>
