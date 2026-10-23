@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ramadabet | Amusnet Midnight Jackpot — 100.000 € Ödül Havuzu</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg:#09080A;
+    --bg-2:#0F0D10;
+    --panel:#151216;
+    --panel-2:#1A161B;
+    --line:#2E252B;
+    --line-soft:#241E24;
+    --ink:#F6F3F4;
+    --ink-2:#BDB4B9;
+    --ink-3:#837A80;
+    --accent:#A30827;
+    --accent-2:#C50A30;
+    --r:12px;
+    --r-s:8px;
+    --r-xs:6px;
+  }
+
+  *{box-sizing:border-box}
+
+  html,body{margin:0;padding:0}
+
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Manrope',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+    font-size:15.5px;
+    line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  .wrap{
+    max-width:960px;
+    margin:0 auto;
+    padding-inline:20px;
+  }
+
+  a{color:inherit}
+
+  a:focus-visible{
+    outline:2px solid #FF91A7;
+    outline-offset:5px;
+  }
+
+  /* HEADER */
+
+  .header{
+    position:sticky;
+    top:0;
+    z-index:30;
+    border-bottom:1px solid var(--line-soft);
+    background:rgba(9,8,10,.86);
+    backdrop-filter:blur(10px);
+  }
+
+  .header-in{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    padding-block:14px;
+  }
+
+  .header-logo{
+    flex:0 1 190px;
+    min-width:0;
+  }
+
+  .header img{
+    display:block;
+    width:auto;
+    max-width:100%;
+    height:60px;
+    object-fit:contain;
+  }
+
+  .header-cta{
+    margin-left:auto;
+    flex-shrink:0;
+  }
+
+  .btn{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    padding:10px 18px;
+    border:1px solid var(--accent-2);
+    border-radius:var(--r-s);
+    background:var(--accent-2);
+    color:#FFF;
+    font-family:'Sora',sans-serif;
+    font-size:13px;
+    font-weight:700;
+    text-decoration:none;
+    box-shadow:0 10px 26px -14px rgba(197,10,48,.95);
+    transition:background .18s ease,transform .12s ease;
+  }
+
+  .btn:hover{
+    background:#E30B38;
+    border-color:#E30B38;
+  }
+
+  .btn:active{transform:translateY(1px)}
+
+  .btn::after{
+    content:"";
+    position:absolute;
+    top:-50%;
+    left:-70%;
+    width:45%;
+    height:200%;
+    background:linear-gradient(
+      100deg,
+      transparent,
+      rgba(255,255,255,.28),
+      transparent
+    );
+    transform:rotate(16deg);
+    animation:parla 4.5s ease-in-out infinite;
+  }
+
+  /* HERO */
+
+  .hero{
+    position:relative;
+    overflow:hidden;
+    border-bottom:1px solid var(--line-soft);
+  }
+
+  .hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+      radial-gradient(
+        760px 420px at 72% 0%,
+        rgba(163,8,39,.34),
+        transparent 62%
+      ),
+      radial-gradient(
+        620px 380px at 4% 14%,
+        rgba(76,2,23,.42),
+        transparent 62%
+      ),
+      repeating-linear-gradient(
+        115deg,
+        rgba(255,255,255,.02) 0 1px,
+        transparent 1px 26px
+      );
+  }
+
+  .hero-in{
+    position:relative;
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    gap:40px;
+    align-items:center;
+    padding-block:58px 52px;
+  }
+
+  .hero-in>*{min-width:0}
+
+  .eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:9px;
+    padding:7px 12px;
+    border:1px solid rgba(197,10,48,.65);
+    border-radius:var(--r-xs);
+    background:rgba(163,8,39,.14);
+    color:#EFC2CC;
+    font-family:'Sora',sans-serif;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+  }
+
+  .eyebrow i{
+    display:block;
+    width:6px;
+    height:6px;
+    flex-shrink:0;
+    border-radius:1px;
+    background:var(--accent-2);
+    animation:yanip 1.8s ease-in-out infinite;
+  }
+
+  h1{
+    margin:20px 0 14px;
+    font-family:'Sora',sans-serif;
+    font-size:clamp(32px,5.2vw,52px);
+    font-weight:800;
+    line-height:1.08;
+    letter-spacing:-.025em;
+    overflow-wrap:break-word;
+  }
+
+  h1 b{color:var(--accent-2)}
+
+  .lede{
+    max-width:520px;
+    margin:0 0 26px;
+    color:var(--ink-2);
+    font-size:16.5px;
+  }
+
+  /* BİLGİ KARTLARI */
+
+  .facts{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1px;
+    overflow:hidden;
+    margin-top:28px;
+    border:1px solid var(--line);
+    border-radius:var(--r);
+    background:var(--line-soft);
+  }
+
+  .facts div{
+    padding:14px 12px;
+    text-align:center;
+    background:#100D11;
+    transition:background .25s ease;
+  }
+
+  .facts div:hover{background:#17121A}
+
+  .facts span{
+    display:block;
+    color:var(--ink-3);
+    font-size:10.5px;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+  }
+
+  .facts b{
+    font-family:'Sora',sans-serif;
+    font-size:14px;
+    font-weight:700;
+  }
+
+  /* PROMOSYON GÖRSELİ */
+
+  .visual{
+    position:relative;
+    isolation:isolate;
+    overflow:hidden;
+    margin:0;
+    border-radius:var(--r);
+    background:#0E0C0F;
+  }
+
+  .visual::before{
+    content:"";
+    position:absolute;
+    top:50%;
+    left:50%;
+    z-index:0;
+    width:170%;
+    aspect-ratio:1;
+    translate:-50% -50%;
+    background:conic-gradient(
+      from 0deg,
+      transparent 0 58%,
+      rgba(163,8,39,.85) 74%,
+      #FF4D6D 84%,
+      rgba(163,8,39,.85) 90%,
+      transparent 100%
+    );
+    animation:donce 5.5s linear infinite;
+  }
+
+  .visual-in{
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+    margin:1.5px;
+    border-radius:10.5px;
+    background:#120F13;
+  }
+
+  .visual img{
+    display:block;
+    width:100%;
+    height:auto;
+    object-fit:contain;
+  }
+
+  .visual-shine{
+    position:absolute;
+    top:-40%;
+    left:-60%;
+    z-index:3;
+    width:40%;
+    height:180%;
+    pointer-events:none;
+    background:linear-gradient(
+      100deg,
+      transparent,
+      rgba(255,255,255,.14),
+      transparent
+    );
+    transform:rotate(14deg);
+    animation:parla 5.5s ease-in-out infinite;
+  }
+
+  /* BÖLÜMLER */
+
+  section.blk{padding-block:52px}
+
+  .blk+.blk{border-top:1px solid var(--line-soft)}
+
+  h2{
+    margin:0 0 6px;
+    font-family:'Sora',sans-serif;
+    font-size:23px;
+    font-weight:700;
+    letter-spacing:-.01em;
+  }
+
+  .sub{
+    margin:0 0 26px;
+    color:var(--ink-3);
+    font-size:13.5px;
+  }
+
+  /* KATILIM ADIMLARI */
+
+  .steps{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+  }
+
+  .step{
+    padding:22px 20px;
+    border:1px solid var(--line-soft);
+    border-radius:var(--r);
+    background:var(--panel);
+    transition:
+      border-color .25s ease,
+      transform .25s ease,
+      background .25s ease;
+  }
+
+  .step:hover{
+    transform:translateY(-4px);
+    border-color:rgba(197,10,48,.55);
+    background:var(--panel-2);
+  }
+
+  .step-no{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:30px;
+    height:30px;
+    margin-bottom:14px;
+    border-radius:var(--r-xs);
+    background:var(--accent-2);
+    color:#FFF;
+    font-family:'Sora',sans-serif;
+    font-size:13px;
+    font-weight:800;
+  }
+
+  .step h3{
+    margin:0 0 6px;
+    font-family:'Sora',sans-serif;
+    font-size:15.5px;
+    font-weight:700;
+  }
+
+  .step p{
+    margin:0;
+    color:var(--ink-2);
+    font-size:13.8px;
+  }
+
+  .step b,.rules b{color:var(--ink)}
+
+  /* KURALLAR */
+
+  .rules-box{
+    overflow:hidden;
+    border:1px solid var(--line);
+    border-radius:var(--r);
+    background:linear-gradient(180deg,var(--panel),var(--bg-2));
+  }
+
+  .rules-head{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:18px 24px;
+    border-bottom:1px solid var(--line-soft);
+  }
+
+  .rules-head h3{
+    margin:0;
+    font-family:'Sora',sans-serif;
+    font-size:15px;
+    font-weight:700;
+  }
+
+  .rules-head i{
+    display:block;
+    flex-shrink:0;
+    width:4px;
+    height:18px;
+    border-radius:1px;
+    background:var(--accent-2);
+  }
+
+  ol.rules{
+    margin:0;
+    padding:10px 24px 26px;
+    list-style:none;
+    counter-reset:rule;
+  }
+
+  ol.rules>li{
+    position:relative;
+    padding:14px 0 14px 38px;
+    border-bottom:1px solid var(--line-soft);
+    color:var(--ink-2);
+    font-size:14.2px;
+    overflow-wrap:break-word;
+    counter-increment:rule;
+  }
+
+  ol.rules>li:last-child{border-bottom:0}
+
+  ol.rules>li::before{
+    content:counter(rule,decimal-leading-zero);
+    position:absolute;
+    top:15px;
+    left:0;
+    color:var(--accent-2);
+    font-family:'Sora',sans-serif;
+    font-size:11.5px;
+    font-weight:700;
+    letter-spacing:.06em;
+  }
+
+  .rules p{margin:10px 0 0}
+
+  /* ÖDÜL TABLOSU */
+
+  .prize-wrap{
+    overflow-x:auto;
+    margin-top:12px;
+    border:1px solid var(--line);
+    border-radius:var(--r-s);
+  }
+
+  .prize-table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:13px;
+  }
+
+  .prize-table caption{
+    padding:10px 14px;
+    text-align:left;
+    color:var(--ink);
+    font-weight:700;
+    background:#100D11;
+  }
+
+  .prize-table th,
+  .prize-table td{
+    padding:12px 14px;
+    border-top:1px solid var(--line-soft);
+    text-align:left;
+  }
+
+  .prize-table th{
+    color:var(--ink);
+    font-size:12px;
+  }
+
+  .prize-table td:last-child{
+    color:var(--ink);
+    font-weight:700;
+    white-space:nowrap;
+  }
+
+  .prize-table td:last-child,
+  .prize-table th:last-child{
+    text-align:right;
+  }
+
+  .prize-table tbody tr:first-child{
+    background:rgba(163,8,39,.15);
+  }
+
+  .warn{
+    margin-top:18px;
+    padding:14px 16px;
+    border:1px solid var(--line-soft);
+    border-left:3px solid var(--accent-2);
+    border-radius:var(--r-s);
+    background:var(--panel);
+    color:var(--ink-2);
+    font-size:13.2px;
+  }
+
+  /* GEÇERLİ OYUNLAR */
+
+  .games-list{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:1px;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    list-style:none;
+    border:1px solid var(--line);
+    border-radius:var(--r);
+    background:var(--line-soft);
+  }
+
+  .games-list li{
+    padding:13px 18px;
+    background:var(--panel);
+    color:var(--ink-2);
+    font-size:13.5px;
+    overflow-wrap:break-word;
+  }
+
+  /* FOOTER */
+
+  .footer{
+    padding-block:24px 40px;
+    border-top:1px solid var(--line-soft);
+    color:var(--ink-3);
+    font-size:12.5px;
+  }
+
+  .footer-in{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:14px;
+  }
+
+  /* ANİMASYONLAR */
+
+  html.js .reveal,
+  html.js .satir{
+    opacity:0;
+    transform:translateY(16px);
+  }
+
+  html.js .gorundu{
+    opacity:1;
+    transform:none;
+    transition:
+      opacity .55s ease var(--gec,0s),
+      transform .55s ease var(--gec,0s);
+  }
+
+  @keyframes donce{
+    to{rotate:360deg}
+  }
+
+  @keyframes parla{
+    0%,62%{left:-60%}
+    88%,100%{left:120%}
+  }
+
+  @keyframes yanip{
+    0%,100%{opacity:1}
+    50%{opacity:.55}
+  }
+
+  /* MOBİL */
+
+  @media(max-width:820px){
+    .hero-in{
+      grid-template-columns:1fr;
+      gap:30px;
+      padding-block:40px 42px;
+    }
+
+    .steps{grid-template-columns:1fr}
+  }
+
+  @media(max-width:520px){
+    .wrap{padding-inline:16px}
+
+    .header img{
+      height:auto;
+      max-height:46px;
+    }
+
+    .header .btn{
+      padding:9px 12px;
+      font-size:12.5px;
+    }
+
+    ol.rules{padding-inline:18px}
+
+    .rules-head{padding-inline:18px}
+
+    .prize-table th,
+    .prize-table td{
+      padding:10px 8px;
+    }
+
+    .games-list{grid-template-columns:1fr}
+  }
+
+  @media(prefers-reduced-motion:reduce){
+    *,
+    *::before,
+    *::after{
+      animation:none!important;
+      transition:none!important;
+    }
+
+    html.js .reveal,
+    html.js .satir{
+      opacity:1!important;
+      transform:none!important;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="wrap header-in">
+    <a
+      class="header-logo"
+      href="https://bit.ly/rmdsosyal"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Ramadabet güncel adres"
+    >
+      <img
+        src="https://ramada.umydigital.com/static/uploads/logo-00b130d1fd434234.png"
+        alt="Ramadabet"
+      >
+    </a>
+
+    <div class="header-cta">
+      <a
+        class="btn"
+        href="https://bit.ly/rmdsosyal"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Güncel Adres
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" aria-labelledby="turnuva-baslik">
+    <div class="wrap hero-in">
+      <div>
+        <span class="eyebrow reveal">
+          <i aria-hidden="true"></i>
+          AMUSNET (EGT) TURNUVASI
+        </span>
+
+        <h1 class="reveal" id="turnuva-baslik">
+          MIDNIGHT JACKPOT
+          <b>100.000 € ÖDÜL HAVUZU!</b>
+        </h1>
+
+        <p class="lede reveal">
+          Amusnet (EGT) sağlayıcısının <b>Midnight Jackpot</b>
+          turnuvası Ramadabet'te! Geçerli oyunlarda puan toplayın,
+          ödül kazanacak <b>2.000 oyuncu</b> arasında yerinizi
+          almak için yarışın.
+        </p>
+
+        <div class="facts reveal">
+          <div>
+            <span>Başlangıç</span>
+            <b>22 Ekim 2026</b>
+          </div>
+          <div>
+            <span>Bitiş</span>
+            <b>5 Kasım 2026</b>
+          </div>
+          <div>
+            <span>Minimum Bahis</span>
+            <b>0,20 €</b>
+          </div>
+          <div>
+            <span>Ödüllü Oyuncu</span>
+            <b>2.000 Kişi</b>
+          </div>
+        </div>
+      </div>
+
+      <figure class="visual reveal">
+        <div class="visual-in">
+          <img
+            src="https://i.ibb.co/NqZX4tf/656X440.jpg"
+            alt="Ramadabet Amusnet Midnight Jackpot — 100.000 € ödül havuzlu turnuva"
+            width="656"
+            height="440"
+            fetchpriority="high"
+          >
+          <span class="visual-shine" aria-hidden="true"></span>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="blk" aria-labelledby="katilim-baslik">
+    <div class="wrap">
+      <h2 class="reveal" id="katilim-baslik">
+        Nasıl Katılabilirsiniz?
+      </h2>
+
+      <p class="sub reveal">
+        Geçerli Amusnet oyunlarında gerçek parayla bahis yapın
+        ve liderlik tablosunda yükselin.
+      </p>
+
+      <div class="steps">
+        <article class="step reveal">
+          <div class="step-no" aria-hidden="true">01</div>
+          <h3>Geçerli Oyunu Seçin</h3>
+          <p>
+            Aşağıda listelenen <b>Amusnet (EGT)</b>
+            oyunlarından birinde turnuvaya katılın.
+          </p>
+        </article>
+
+        <article class="step reveal">
+          <div class="step-no" aria-hidden="true">02</div>
+          <h3>Minimum 0,20 € Bahis Yapın</h3>
+          <p>
+            Yalnızca <b>gerçek parayla</b> yapılan bahisler
+            geçerlidir. Bonus fonları, ücretsiz dönüşler ve
+            promosyon kredileri kapsam dışıdır.
+          </p>
+        </article>
+
+        <article class="step reveal">
+          <div class="step-no" aria-hidden="true">03</div>
+          <h3>Puan Toplayın, Sıralamaya Girin</h3>
+          <p>
+            Ödül kazanabilmek için <b>en az 1 puan</b>
+            toplayın ve ödüllü <b>ilk 2.000 oyuncu</b>
+            arasında yer alın.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" aria-labelledby="odul-baslik">
+    <div class="wrap">
+      <h2 class="reveal" id="odul-baslik">Ödül Dağıtımı</h2>
+
+      <p class="sub reveal">
+        Midnight Jackpot turnuvasının sıralamalara göre ödül tutarları.
+      </p>
+
+      <div class="rules-box reveal">
+        <div class="rules-head">
+          <i aria-hidden="true"></i>
+          <h3>100.000 € Ödül Havuzu</h3>
+        </div>
+
+        <div
+          class="prize-wrap"
+          style="margin:0;border:0;border-radius:0"
+        >
+          <table class="prize-table">
+            <thead>
+              <tr>
+                <th scope="col">Sıralama</th>
+                <th scope="col">Ödül Miktarı</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>10.000 €</td></tr>
+              <tr><td>2</td><td>4.000 €</td></tr>
+              <tr><td>3</td><td>2.500 €</td></tr>
+              <tr><td>4–5</td><td>6.000 €</td></tr>
+              <tr><td>6–10</td><td>1.000 €</td></tr>
+              <tr><td>11–20</td><td>400 €</td></tr>
+              <tr><td>21–50</td><td>200 €</td></tr>
+              <tr><td>51–100</td><td>750 €</td></tr>
+              <tr><td>101–200</td><td>40 €</td></tr>
+              <tr><td>201–500</td><td>110 €</td></tr>
+              <tr><td>501–1000</td><td>10 €</td></tr>
+              <tr><td>1001–2000</td><td>15 €</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="warn reveal">
+        Eklenen turnuva kazancında <b>1 kat çevrim</b> şartı vardır.
+        Çevrim tamamlandıktan sonra eklenen nakit ödülün
+        <b>maksimum 10 katına kadar</b> çekim yapılabilir.
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" aria-labelledby="kurallar-baslik">
+    <div class="wrap">
+      <h2 class="reveal" id="kurallar-baslik">
+        Genel Kurallar ve Şartlar
+      </h2>
+
+      <p class="sub reveal">
+        Turnuvaya katılmadan önce katılım, puanlama ve ödül
+        koşullarını dikkatlice okuyunuz.
+      </p>
+
+      <div class="rules-box reveal">
+        <div class="rules-head">
+          <i aria-hidden="true"></i>
+          <h3>Midnight Jackpot — Turnuva Şartları</h3>
+        </div>
+
+        <ol class="rules">
+          <li>
+            Turnuvada ödül kazanabilmek için Amusnet sağlayıcısının
+            geçerli oyunlarında <b>minimum 0,20 € bahis</b> alarak
+            katılım sağlamanız gerekmektedir.
+          </li>
+
+          <li>
+            Yalnızca <b>gerçek parayla yapılan bahisler</b> geçerlidir;
+            <b>bonus fonları, ücretsiz dönüşler (free spins) veya
+            promosyon kredileri</b> hariçtir.
+          </li>
+
+          <li>
+            Turnuva boyunca toplam <b>2.000 oyuncu</b>
+            liderlik tablosunda yer alarak ödül kazanacaktır.
+          </li>
+
+          <li>
+            Liderlik tablosu; <b>toplam bahis hacmi, ardışık kazanç
+            serileri ve ardışık kayıp serilerine</b> göre puan
+            toplanarak oluşturulur.
+          </li>
+
+          <li>
+            <b>Toplam Bahis Hacmi:</b> Kazanıp kazanmadığına
+            bakılmaksızın yapılan her gerçek para yatırımı
+            skora doğrudan katkı sağlar.
+          </li>
+
+          <li>
+            Aynı puana sahip oyunculardan,
+            <b>o puana ilk ulaşan oyuncu</b>
+            liderlik tablosunda üst sırada yer alır.
+          </li>
+
+          <li>
+            Ödül kazanabilmek için oyuncuların <b>en az 1 puan</b>
+            toplaması gerekmektedir. Nakit ödüller turnuva bitiminde
+            <b>otomatik olarak hesaplara yatırılır.</b>
+          </li>
+
+          <li>
+            Nakit ödüller, turnuva sona erdikten ve
+            <b>liderlik tablosu nihai olarak doğrulandıktan hemen sonra</b>
+            kazanan oyuncuların hesaplarına otomatik olarak aktarılır.
+          </li>
+
+          <li>
+            Eklenen turnuva kazancının <b>1 katı çevrim şartı</b>
+            mevcuttur. Çevrim şartı tamamlandıktan sonra eklenen
+            nakit ödülün <b>maksimum 10 katına kadar</b> çekim işlemi
+            yapılmaktadır. Üzeri tutarlar otomatik olarak düzenlenecektir.
+          </li>
+
+          <li>
+            <b>Amusnet (EGT) ve Ramadabet</b> bu promosyonu
+            dilediği zaman <b>değiştirme veya iptal etme hakkını</b>
+            saklı tutar.
+          </li>
+
+          <li>
+            Bu kurallar <b>Ramadabet Genel Hüküm ve Koşullarını</b>
+            içerir.
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="blk" aria-labelledby="oyunlar-baslik">
+    <div class="wrap">
+      <h2 class="reveal" id="oyunlar-baslik">Geçerli Oyunlar</h2>
+
+      <p class="sub reveal">
+        Turnuvaya katılım sağlayabileceğiniz Amusnet (EGT) oyunları.
+      </p>
+
+      <ul class="games-list reveal">
+        <li>40 Burning Hot 6 Reels</li>
+        <li>40 Extra Crown Triple Boost Golden Coins Link</li>
+        <li>Shining Crown</li>
+        <li>Lucky Wood</li>
+        <li>100 Super Hot</li>
+        <li>Candy Palace</li>
+        <li>40 Burning Hot</li>
+        <li>Secrets of Alchemy</li>
+        <li>Flaming Hot Extreme</li>
+        <li>40 Extra Crown - Buy Bonus</li>
+        <li>Supreme Hot</li>
+        <li>27 Eternal Hot</li>
+        <li>Shining Crown Buy Bonus</li>
+        <li>20 Hot Blast</li>
+        <li>20 Burning Hot</li>
+        <li>100 Power Hot</li>
+        <li>40 Power Hot Triple Boost Golden Coins Link</li>
+        <li>Flaming Hot</li>
+        <li>40 Super Hot</li>
+        <li>40 Golden Coins</li>
+        <li>More Dice &amp; Roll</li>
+        <li>Crazy Red Nest Quest</li>
+        <li>Burning Hot</li>
+        <li>Pot O'Pumpkin</li>
+        <li>100 Burning Hot</li>
+        <li>Vampire Night</li>
+        <li>20 Super Hot</li>
+        <li>Candy Palace 1000</li>
+        <li>Ultimate Hot</li>
+        <li>Dancing Dead</li>
+        <li>100 Golden Coins</li>
+        <li>Super Crazy Red x1000</li>
+        <li>Mythical Treasure</li>
+        <li>20 Vampire Beast</li>
+        <li>Great 27</li>
+        <li>40 Vampire Beast</li>
+        <li>27 Wins</li>
+        <li>40 Vampire Beast Triple Boost Golden Coins Link</li>
+        <li>Hot Deco</li>
+        <li>Wild Fortune</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <span>© Ramadabet</span>
+    <span>18+ · Sorumlu oyun</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  if (!("IntersectionObserver" in window)) return;
+
+  document.querySelectorAll("ol.rules > li").forEach(function(li){
+    li.classList.add("satir");
+  });
+
+  var hedefler = document.querySelectorAll(".reveal, .satir");
+
+  var gozcu = new IntersectionObserver(function(kayitlar){
+    kayitlar.forEach(function(k, i){
+      if (!k.isIntersecting) return;
+
+      k.target.style.setProperty(
+        "--gec",
+        Math.min(i, 6) * 70 + "ms"
+      );
+
+      k.target.classList.add("gorundu");
+      gozcu.unobserve(k.target);
+    });
+  }, {
+    rootMargin: "0px 0px -8% 0px",
+    threshold: 0.12
+  });
+
+  document.documentElement.classList.add("js");
+
+  setTimeout(function(){
+    hedefler.forEach(function(el){
+      el.classList.add("gorundu");
+    });
+
+    gozcu.disconnect();
+  }, 2500);
+
+  hedefler.forEach(function(el){
+    gozcu.observe(el);
+  });
+})();
+</script>
+
+</body>
+</html>
